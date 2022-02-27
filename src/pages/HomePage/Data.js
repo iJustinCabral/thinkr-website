@@ -3,7 +3,7 @@ export const homeObjOne = {
     imgStart: 'start',
     lightTopLine: false,
     lightTextDesc: false, 
-    buttonLabel: 'Coming Soon - Thinkr (Series 1) NFT',
+    buttonLabel: 'More Coming Soon',
     description: 'Our team believes in quality, affordable, and accessible education for all. Thinkr’s core mission is the improvement of the educational system using Web3 technology. We’ll start by using NFT’s to fund a scholarship and stipend program for college students. The road ahead is long, so join us in our journey to empower students and change the education for the better. ',
     headline: 'Be A Thinkr', 
     lightText: false, 
