@@ -1,0 +1,327 @@
+.timeline {
+    height: 100%;
+    position: relative;
+}
+
+/* Alternates background color for every other quarter*/
+.timeline:nth-child(4n-1) {
+background-color: #DFEDFF;
+}
+
+.timeline:nth-child(4n-2) {
+background-color: #fff;
+}
+
+.timeline:nth-child(4n-3) {
+background-color: #fff;
+}
+
+.timeline:nth-child(4n-4) {
+background-color: #F2F5F9;
+}
+
+.col-card-left {
+    background-color: #EBEBEB;
+    border-radius: .5rem;
+    float: right;
+    max-width: 500px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.col-card-right {
+    background-color: #EBEBEB;
+    border-radius: .5rem;
+    float: left;
+    width: 500px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.col-note {
+    color: #928585;
+    font-size: 1rem;
+}
+
+.quarter {
+    color: #CCCCCC;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.quarter-right {
+    text-align: left;
+    float: left;
+}
+
+.quarter-left {
+    text-align: left;
+    float: right;
+    padding-top: 3rem;
+}
+
+.col-card-title {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2581BB;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col-card-title-left {
+    text-align: right;
+}
+
+.col-card-title-right {
+    text-align: left;
+}
+
+.col-card-subtitle {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #2581BB;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.col-card-subtitle-left {
+    text-align: right;
+}
+
+.col-card-subtitle-right {
+    text-align: left;
+}
+
+.col-card-para {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #0F6164;
+    background-color: white;
+}
+
+.triangle-left {
+    border-left: 15px solid #2581BB;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-top: 15px;
+    float: left;
+    position: relative;
+
+}
+
+.triangle-right {
+    border-right: 15px solid #2581BB;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-top: 15px;
+    float: right;
+    position: relative;
+}
+
+.col-note-left {
+    text-align: right;
+    margin: 1rem;
+    margin-top: 2.3rem;
+}
+
+.col-note-right {
+    text-align: left;
+    margin: 1rem;
+    margin-top: 2.3rem;
+}
+
+.col-card-url-left {
+    text-align: right;
+}
+
+.col-card-url {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    color: white;
+}
+
+.col-card-url-right {
+    text-align: left;
+}
+
+.col-card-url-left {
+    text-align: right;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 3;
+    box-shadow:0 0 0 4px hsl(0, 0%, 100%),inset 0 2px 0 rgba(0,0,0,0.08),0 3px 0 4px rgba(0,0,0,0.05);
+}
+
+.circle-done{
+    background-color: #5CE88B;
+}
+
+.circle-inprogress{
+    background-color: #F4B65F;
+}
+
+.circle-incomplete{
+    background-color: #CFBFBF;
+}
+
+.circle-img img{
+    width:100%;
+    height:100%;
+    position: relative;
+
+}
+
+.circle-inc img{
+    opacity: 0.4;
+}
+
+.verticaline {
+    border-left: 2px solid #CFBFBF;;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+}
+
+/* Just change the pixel height as we progress */
+.verticaline-done {
+      border-left: 6px solid #5CE88B;
+      height: 225px;
+      position: absolute;
+      left: 49.86%;
+      top: -3%;
+      z-index: 2;
+      /* glow */
+      box-shadow: 0px 0px 5px 2px #5CE88B;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.column-left {
+    float: left;
+    width: 45%;
+}
+
+.column-right {
+    float: right;
+    width: 45%;
+}
+
+.column-center {
+    display: inline-block;
+    padding-top: 1rem;
+    width: 10%;
+}
+
+.numberCircle {
+    color: white;
+    padding: initial;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 1rem;
+    width: min-content;
+    height: min-content;
+    border-radius: 10px;
+    background-color: #2581BB;
+    border: 2px solid #2581BB;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+
+
+/* For mobile devices up to 1300px width */
+@media only screen and (max-width: 1300px) {
+  [class*="circle"] {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 3;
+    box-shadow:0 0 0 4px hsl(0, 0%, 100%),inset 0 2px 0 rgba(0,0,0,0.08),0 3px 0 4px rgba(0,0,0,0.05);
+  }
+
+  [class*="col-card-"] {
+    width: 100%;
+  }
+
+  [class="numberCircle"]{
+    font-size: 0.6rem;
+  }
+}
+
+/* For mobile devices up to 800px width, the logo was not directly in the circles so needed to offset from the top */
+@media only screen and (max-width: 800px) {
+  .circle-img img{
+        top: -30px;
+  }
+
+  .verticaline-done{
+    left: 49.55%;
+  }
+}
+
+/* iPad mini logo would appear above circles*/
+@media only screen and (device-width: 768px) {
+  .circle-img img{
+        margin-top: 1.9rem;
+  }
+}
+
+/* Fix the QUARTER text that was too far off screen for iphone SE max width and below */
+@media only screen and (max-width: 375px) {
+  .quarter {
+      font-size: 3.5rem;
+  }
+}
+
+/* iPhone SE Horizontal view fix */
+@media only screen and (device-width: 667px) {
+  .circle-img img{
+        top: 0px;
+  }
+}
+
+/* Samsung Galaxy S8+ Horizontal view fix */
+@media only screen and (device-width: 740px) {
+  .circle-img img{
+        top: 0px;
+  }
+}
+
+/* Surface Duo Horizontal view fix */
+@media only screen and (device-width: 720px) {
+  .circle-img img{
+        top: 0px;
+  }
+}

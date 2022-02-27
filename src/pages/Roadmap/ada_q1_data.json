@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "state": "done",
+        "title": "Welcome to Thinkr",
+        "subtitle": "Website Version 1.0",
+        "para": "The launch of our official website is the first step in delivering Web3 products that will help change students’ lives. The road ahead is an exciting one and the journey will most certainly be our greatest reward.",
+        "note": "February 27, 2022",
+        "quarter": "Q1 2022"
+    },
+    {
+        "id": 2,
+        "hasURL": 1,
+        "url": "discord.com",
+        "state": "done",
+        "title": "Community Building",
+        "subtitle": "We are all going to make it. #WAGMI",
+        "para": "Bringing together a group of individuals that know the importance of opportunity in education. Education is a human right.",
+        "note": ""
+    },
+    {
+        "id": 3,
+        "state": "inprogress",
+        "title": "Announcing the Lovelace Scholarship Program",
+        "subtitle": "Letting the World Know",
+        "para": "The Lovelace Scholarship Program is one of our many plans to use web3 technology to revolutionize how students will achieve higher education. We plan on getting the word out there about what we’re building, and how it will impact lives in a tangible way.",
+        "note": ""
+    },
+    {
+        "id": 4,
+        "state": "inprogress",
+        "title": "Recruit more Thinkrs!",
+        "subtitle": "We need more Thinkrs like you!",
+        "para": "Thinkr is currently in the early community and structural development stages. As our project grows, we are continuously looking for talented, diverse, and open-minded members that would bring value to our team.",
+        "note": "",
+        "hasURL": 1,
+        "url": "twitter.com/teamthinkr"
+    },
+    {
+        "id": 5,
+        "state": "inprogress",
+        "title": " DAO, Tokenomics, and Smart Contract Planning",
+        "subtitle": "Structural Planning in Progress",
+        "para": "Architecting Thinkr’s NFT Smart contract deployment plans, $THINK tokenomics, $THINK utility, and the Dreamr DAO.",
+        "note": ""
+    }
+]

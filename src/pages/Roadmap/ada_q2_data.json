@@ -1,0 +1,51 @@
+[
+    {
+        "id": 2,
+        "state": "incomplete",
+        "title": "Begin NFT Art Collaboration",
+        "subtitle": "Collaborate with our Amazing Artists.",
+        "para": "The development of the Thinkr (Series 1) artwork will do its best to honor the great thinkers who have come before us.The process of bringing you our artwork and the release of our Thinkr collection will be transparent, where community members will have a feeling of inclusion during the project's most important stages.",
+        "quarter": "Q2 2022",
+        "note": ""
+    },
+    {
+        "id": 3,
+        "state": "incomplete",
+        "title": "Begin Smart Contract Development",
+        "subtitle": "Coding coding coding...keep them fingers coding",
+        "para": "Smart contracts are no joke because all the code is final once published to the Ethereum mainnet. That means any error that may cause an exploit could go on for years undetected. This is why we will be incredibly deliberate and precise in crafting our smart contracts so we can be confident in our project’s foundation for the foreseeable future.",
+        "note": ""
+    },
+    {
+        "id": 4,
+        "state": "incomplete",
+        "title": "THINK List",
+        "subtitle": "Giving back to our earliest supporters",
+        "para": "Thinkr would be nothing without our community. A select few who believed in our project from the beginning will be given the chance to mint our first NFT series from our THINK List.",
+        "note": ""
+    },
+    {
+        "id": 5,
+        "state": "incomplete",
+        "title": "Thinkr (Series 1) NFT Mint Date",
+        "subtitle": "Dutch Auction and Mint Prices",
+        "para": "Unveil and announce our first NFT collection, the Thinkr (Series 1). This announcement will provide details of when the collection will be available to mint, and Dutch auction prices associated with this minting.",
+        "note": ""
+    },
+    {
+        "id": 6,
+        "state": "incomplete",
+        "title": "The Dreamr DAO Opening Day",
+        "subtitle": "Details on the official launch",
+        "para": "We will be announcing the grand opening of The Dreamr DAO, and unveil the Dreamr NFT required for access. We will also begin to educate our community about the process of joining. This DAO serves as a fundamental layer of our community engagement so we can’t wait to share more with you.",
+        "note": ""
+    },
+    {
+        "id": 7,
+        "state": "incomplete",
+        "title": "$THINKR Utility Explained",
+        "subtitle": "Details on how we plan to use our ERC-20 token",
+        "para": "Announcing how we will go about incorporating our ERC-20 $THINK token into our future plans. There are exciting use cases that we have in store.",
+        "note": ""
+    }
+]

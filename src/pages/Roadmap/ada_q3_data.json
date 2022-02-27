@@ -1,0 +1,35 @@
+[
+    {
+        "id": 2,
+        "state": "incomplete",
+        "title": "Lovelace Scholarship Application Process",
+        "subtitle": "If you are a Thinkr, we want you!",
+        "para": "We will open applications to find the first recipient of the Lovelace Scholarship. Thinkr wants to help change education as we know it. This starts by relieving the burden of tuition and living expenses of a scholar who we feel encapsulates our goals as a community.",
+        "quarter": "Q3 2022",
+        "note": ""
+    },
+    {
+        "id": 3,
+        "state": "incomplete",
+        "title": "The Selection Process",
+        "subtitle": "Sifting through the applicants",
+        "para": "With the help of the The Dreamr DAO members, we will begin the process of choosing finalists for the Lovelace Scholarship. We look forward to working with our community on what will be a life changing event for students.",
+        "note": ""
+    },
+    {
+        "id": 4,
+        "state": "incomplete",
+        "title": "DAO Decision",
+        "subtitle": "Dreamr DAO members will help us finalize the recipient of the scholarship",
+        "para": "The members of the Dreamr DAO will evaluate the final ten applicants for the Lovelace Scholarship. Community members who receive the highest rarity tier of our NFT series  will automatically be a part of the DAO.",
+        "note": ""
+    },
+    {
+        "id": 5,
+        "state": "incomplete",
+        "title": "Awarding the Lovelace Scholarship",
+        "subtitle": "Rewarding the first Thinkr",
+        "para": "After the Dreamr DAO has made their decision,the first recipient of the Lovelace Scholarship will be announced. Together with the Thinkr community, the first step to changing higher education will begin.",
+        "note": ""
+    }
+]
