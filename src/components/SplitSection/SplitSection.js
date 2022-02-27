@@ -5,7 +5,11 @@ import { LeftSection, RightSection, SectionContainer, QuestionItem,
          SectionTitle, SectionBody, BottomSection,
          BottomTitleText, ContentWrapper, SectionPhoto } from './SplitSection.elements'
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100)
+const scrollToRef = (ref) => window.scrollTo({
+            top: ref.current.offsetTop - 100,
+            left: 0,
+            behavior: "smooth"
+})
 
 const SplitSection = () => {
 
@@ -57,7 +61,7 @@ const SplitSection = () => {
                         A Scholarship Full of Love
                     </SectionTitle> 
                     <SectionBody>
-                    The Lovelace Scholarship Program was designed by the Thinkr team, and will be the first proposal of The Dreamr DAO council members to be voted on. It will do the following:
+                    The Lovelace Scholarship Program was designed by the Thinkr team and will be the first proposal The Dreamr DAO council members vote on. It will do the following:
                     </SectionBody>
                     <SectionBody>
                        - Pay for a student(s) college degree on a per semester basis
@@ -66,10 +70,10 @@ const SplitSection = () => {
                         - Pay the student(s) a bi-weekly stipend of roughly $1,500 or $40,000 a year total
                     </SectionBody>
                     <SectionBody>
-                        We have a goal set in mind for the beginning of August 2022 as the time we select the winner(s), but further details regarding the application process, selection process, academic requirements and more will be announced at a later date on the official DAO website www.adreamaway.org.  
+                    The goal we have in mind is to provide a student tuition and living stipend for the Fall 2022 Semester. Further details regarding the application process, selection process, and academic requirements that need to be mainted and more will be announced at a later date on the official DAO website www.adreamaway.org. 
                     </SectionBody>
                     <SectionBody>
-                        The Scholarship is funded by 70% of all future Thinkr NFT series, and 100% of all Dreamr NFT auction sales. We believe this will allows us to not only fund this scholarship, but help us build more Web3 products in the future to help change students' lives. Knowing how important a scholarship opportunity like this was to the founders of Thinkr, we couldn’t be more excited to bring this opportuntity to more people. 
+                        The Scholarship is funded by 60% of all future Thinkr NFT series, and 100% of all Dreamr NFT auction sales. We believe this will allows us to not only fund this scholarship, but help us build more Web3 products in the future to help change students' lives. Knowing how important a scholarship opportunity like this was to the founders of Thinkr, we couldn’t be more excited to bring this opportuntity to more people. 
                     </SectionBody>
                 </ContentWrapper>
 
@@ -78,9 +82,9 @@ const SplitSection = () => {
                         Funding Those In Need
                     </SectionTitle> 
                     <SectionBody>
-                    Our current plan is to offer the Lovelace Scholarship Program to underprivileged undergraduates who are either currently enrolled, or plan to be enrolled in a college institution. When we say underprivileged, we mean those who come from a parent(s) or guardian(s) household that makes less than $125,000 a year. We will also be placing a great emphasis on those in the BIPOC community because historically they are underserved in the higher education setting and graduate with a higher average level of debt.                    </SectionBody>
+                    Our current plan is to offer the Lovelace Scholarship to underprivileged undergraduates who are currently enrolled, or plan on enrolling in a college institution. When we say underprivileged, we mean those who come from a parent(s) or guardian(s) household that makes less than $125,000 a year. We will be placing a great emphasis on those in the BIPOC community because historically they are underserved in higher education and deal with a average higher financial burden upon graduating from college.                    </SectionBody>
                     <SectionBody>
-                    For those who are selected by the scholarship and are currently enrolled in college, the scholarship will pay off any previous school debt once the student graduates with their degree. This scholarship is about freeing up students of their financial burdens, and those who started college before learning of our program shouldn’t be left out of that process. Those who are just starting their journey in higher learning will have their scholarship renewed on a per semester basis. We want to encourage great academic standards, so we also plan to provide mentoring and tutorship opportunities to selectees as well.                    
+                    If a student is selected for the scholarship and currently enrolled in college, the scholarship will pay off all school debt once the student graduates with their degree. This scholarship is about freeing students of financial burdens, and those who started college before learning about our program shouldn’t be left out of the process. Those who are just starting their journey in higher learning will have their scholarship renewed on a per semester basis. We want to encourage great academic standards, so we plan to provide mentoring and tutorship opportunities to selectees as well.                    
                     </SectionBody>
                 </ContentWrapper>
 
@@ -95,10 +99,10 @@ const SplitSection = () => {
                     - Place the highest bid in the daily Dreamr NFT auction
                     </SectionBody>
                     <SectionBody>
-                    - Burn 5000 $THINK tokens to mint a free Dreamr + gas fee
+                    - Burn 5000 $THINK tokens plus the gas fees to mint a Dreamr NFT. 
                     </SectionBody>
                     <SectionBody>
-                         The inspiration behind having a daily Dreamr auction comes from the innovative Nouns project. A daily auction of 1 Dreamr NFT allows for a consistent volume of ETH to be placed into the DAO Treasury. With 100% of all sales from the daily Dreamr auction being placed directly into the treasury, it allows us to fund the Lovelace Scholarship program for years to come. The auction also  provides an opportunity for people who don’t own $THINK tokens or a Thinkr NFT a chance to be part of what we’re building.
+                    The inspiration behind a daily Dreamr auction comes from the innovative Nouns project. A daily auction of 1 Dreamr NFT allows for a consistent volume of ETH to be placed into the DAO Treasury. With 100% of all sales from the daily Dreamr auction being placed directly into the treasury, the Lovelace Scholarship program will be funded for years to come. The auction also provides an opportunity for people who don’t own $THINK tokens or a Thinkr NFT the opportunity to be a part of what we’re building.
                     </SectionBody>
                     <SectionBody>
                     The second way to join will be to burn 5000 $THINK tokens. This will allow a community member who holds a Thinkr (Series 1) NFT to mint a Dreamr NFT for free, except for gas fees. By burning the tokens it makes the process of joining the DAO in the future harder, rewarding those who helped us build this project from the start by increasing scarcity of access.

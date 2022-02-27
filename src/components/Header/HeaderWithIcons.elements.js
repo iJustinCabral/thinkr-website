@@ -81,6 +81,10 @@ export const HeaderButton = styled.button`
     &.active {
         color: ${({headerColor}) => headerColorType(headerColor)};
     }
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 4px;
+    }
 `
 
 export const HeaderButtonTitle = styled.h1`

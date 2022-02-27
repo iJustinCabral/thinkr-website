@@ -87,6 +87,7 @@ export const CButtonSection = styled.button`
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px;
+    color: #000;
 
     &:hover {
         color: #fff;

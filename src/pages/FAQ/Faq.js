@@ -4,7 +4,11 @@ import PageDivider from '../../components/PageDivider/PageDivider';
 import BodyFAQ from '../../components/Body/BodyFAQ';
 import { dividerObject, headerObject} from './Data';
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100)
+const scrollToRef = (ref) => window.scrollTo({
+    top: ref.current.offsetTop - 100,
+    left: 0,
+    behavior: "smooth"
+})
 
 function Faq() {
 

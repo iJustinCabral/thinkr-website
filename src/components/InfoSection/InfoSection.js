@@ -16,7 +16,7 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc, buttonLab
                         <Heading lightText={lightText}>{headline}</Heading>
                         <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
                         <a href={url}> 
-                            <Button big fontBig primary={primary}>{buttonLabel} </Button>
+                            <Button big primary={primary}>{buttonLabel} </Button>
                         </a>
                     </TextWrapper>
                 </InfoColumn>

@@ -50,6 +50,7 @@ export const QuestionItem = styled.button`
     transition: all 0.2s;
     padding: 20px;
     margin: 30px;
+    color: #000;
 
     &:hover {
         color: #fff;

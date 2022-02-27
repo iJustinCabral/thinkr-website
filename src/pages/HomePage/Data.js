@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightTopLine: false,
     lightTextDesc: false, 
     buttonLabel: 'Coming Soon - Thinkr (Series 1) NFT',
-    description: 'We believe in quality, affordable, and accessible education for everyone. Its our mission to change education for the better, so our first steps start with using NFT technology to fund a scholarship/stipend program for students. Join us in empowering students and hepling change lives for the better.',
+    description: 'Our team believes in quality, affordable, and accessible education for all. Thinkr’s core mission is the improvement of the educational system using Web3 technology. We’ll start by using NFT’s to fund a scholarship and stipend program for college students. The road ahead is long, so join us in our journey to empower students and change the education for the better. ',
     headline: 'Be A Thinkr', 
     lightText: false, 
     topLine: 'Knowledge is Power', 
@@ -43,7 +43,7 @@ export const homeObjTwo = {
     headline:
       'Our Roadmap',
     description:
-      "The roadmap we have in mind spans the next 3 years, starting with the Lovelace era in 2022. This era focuses on the projects core foundation, which is centered around launching our Thinkr (Series 1) NFT collection and building the DreamrDAO platform which will be used to provide selected students with a scholarship/stipend starting in August of 2022.",
+      "Our roadmap will cover the next three years, starting with the Lovelace Era in 2022. This period will focus on the project's core foundation, the creation of our Thinkr (Series 1) NFT collection, and Dreamr DAO. The sale of NFT’s will fund the DAO and provide students chosen by the DAO with a scholarship and stipend for the Fall 2022 Semester.",
     buttonLabel: 'See The Full Roadmap',
     imgStart: 'start',
     img: require('../../images/roadmap.png'),
@@ -61,7 +61,7 @@ export const homeObjTwo = {
     topLine: 'Built For Students By Students',
     headline: 'About The Team',
     description:
-      'Our core team consists of five graduate students. Four of whom are attending Worcester Polytechnic Institute in pursuit of a Masters Degree in Computer Science, and the other is attending the University Of Rhode Island in pursuit of a Masters in Public Adminsitration. Those who attend WPI were admitted as part of a program called "The Scholarship For Service" which serves as the core inspiration behind our project. ',
+      'Our core team consists of five students in graduate school. Four are pursuing a Master in Computer Science Master with a specialization in Computer Security from the Worcester Polytechnic Institute. The fifth is attending the University of Rhode pursuing a Master in Public Administration with a Cyber Security Certificate. ',
     buttonLabel: 'Learn More About Us',
     imgStart: '',
     img: require('../../images/team.png'),
@@ -79,7 +79,7 @@ export const homeObjTwo = {
     topLine: 'United we stand',
     headline: 'Building A Community',
     description:
-      'Thinkr is not just an NFT project. It is about building a community that helps anyone reach their full potential, no matter what stage of life they are at. Discord, which is an amazing platform for connecting people around the world, will be at the center of how we acheive this goal. Together we will build the worlds strongest community centered around empowering students.',
+      'Thinkr is not just an Web3 company. Our team is dedicated to building a community of people that will help all of its members reach their full potential. Discord, which is one of the biggest community building platforms in the Web3 space, will be how we foster this organic growth of like minded individuals.',
     buttonLabel: 'Join The Discord',
     imgStart: '',
     img: require('../../images/collab.png'),
@@ -98,7 +98,7 @@ export const homeObjTwo = {
     headline:
       'We Have Answers',
     description:
-      "Some of the most frequently asked questions are: What is an NFT? What does it mean to mint? What is a DAO? All of these and more are answered on our full frequently asked question page. We go in depth on everything you need to know about our project and more.",
+      "Some of the most frequently asked questions in the Web3 space include: What is an NFT? How do you mint an NFT? What is a DAO? All of these and more are answered on our frequently asked questions page. ",
     buttonLabel: 'Read The FAQs',
     imgStart: 'start',
     img: require('../../images/questions.png'),

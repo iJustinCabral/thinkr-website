@@ -11,10 +11,10 @@ import ada_q2_data from '../../pages/Roadmap/ada_q2_data.json'
 import ada_q3_data from '../../pages/Roadmap/ada_q3_data.json'
 import ada_q4_data from '../../pages/Roadmap/ada_q4_data.json'
 
-function TimelineBody({toggleState})  {
+function TimelineBody({toggleState, myRef})  {
 
     return(
-        <div>
+        <div ref={myRef}>
             <TimelineSection className= {toggleState === 1 ? "content active-content" : "content"}>
                 <TimelineHeader {...timelineHeaderLovelace}/>
                 <TimeLine data={ada_q1_data} />

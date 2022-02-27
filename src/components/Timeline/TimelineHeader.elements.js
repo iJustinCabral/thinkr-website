@@ -6,11 +6,15 @@ export const HeaderSection = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+
+   @media screen and (max-width: 768px) {
+      padding: 40px;
+  }
 `
 
 export const HeaderTitle = styled.h1`
    margin-bottom: 34px;
-   font-size: 50px;
+   font-size: 34px;
    line-height: 1.1;
    font-weight: 600;
    color: #0F6164;

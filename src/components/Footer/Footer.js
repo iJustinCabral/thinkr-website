@@ -14,7 +14,7 @@ const Footer = () => {
             </FooterSubHeading>
 
             <FooterSubText>
-                Follow us or come join our team.
+                Follow us or join the Thinkr team.
             </FooterSubText>
         </FooterSubscription>
 

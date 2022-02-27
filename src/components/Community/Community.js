@@ -15,7 +15,7 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc, buttonLab
                         <Heading lightText={lightText}>{headline}</Heading>
                         <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
                         <a href={url}> 
-                        <DiscordButton big fontBig primary={primary}>{buttonLabel}</DiscordButton>
+                        <DiscordButton big primary={primary}>{buttonLabel}</DiscordButton>
                         </a>
                     </TextWrapper>
                 </InfoColumn>

@@ -255,7 +255,6 @@ background-color: #F2F5F9;
 }
 
 
-
 /* For mobile devices up to 1300px width */
 @media only screen and (max-width: 1300px) {
   [class*="circle"] {
@@ -287,7 +286,8 @@ background-color: #F2F5F9;
   }
 
   .verticaline-done{
-    left: 49.55%;
+    left: 50%;
+    border-left: 2px solid #5CE88B;
   }
 }
 

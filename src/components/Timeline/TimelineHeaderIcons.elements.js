@@ -70,6 +70,7 @@ export const HeaderButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 
     &:hover {
         color: #2581BB;
@@ -77,6 +78,10 @@ export const HeaderButton = styled.button`
 
     &.active {
         color: #2581BB;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 4px;
     }
 `
 
