@@ -61,7 +61,7 @@ export const homeObjTwo = {
     topLine: 'Built For Students By Students',
     headline: 'About The Team',
     description:
-      'Our core team consists of five students in graduate school. Four are pursuing a Masters in Computer Science with a specialization in Computer Security from the Worcester Polytechnic Institute. The fifth is attending the University of Rhode pursuing a Masters in Public Administration with a Cyber Security Certificate. ',
+      'Our core team consists of five students in graduate school. Four are pursuing a Masters in Computer Science with a specialization in Computer Security from the Worcester Polytechnic Institute. The fifth is attending the University of Rhode Island pursuing a Masters in Public Administration with a Cyber Security Certificate. ',
     buttonLabel: 'Learn More About Us',
     imgStart: '',
     img: require('../../images/team.png'),
