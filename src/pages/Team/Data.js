@@ -1,30 +1,15 @@
 const bio = bio => {
     switch (bio) {
         case "Justin":
-            return ("Bio: B.S in Computer Science, currently\
-                    working on Graduate Degree in Computer Science from\
-                    Worcester Polytechnic Institute. Self-taught\
-                    programmer/designer with 10 years of\
-                    experience developing software. SFS scholarship award winner.");
+            return ("B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Self-taught programmer and designer with ten years of software development experience. CyberCrops SFS scholarship award winner.");
         case "Jon":
-            return ('Bio: Jonathan is currently working\
-                    on his MS in Computer Science from\
-                    Worcester Polytechnic Institute.\
-                    He currently holds a BS\
-                    in Computer Science and two AS degrees\
-                    in Information Technology & Computer Studies.');
+            return ('B.S. in Computer Science with an Associates Degrees in Information Technology and Computer Studies. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. ');
         case "Brian":
-            return ('Bio: B.S. in Computer Science,\
-                    is currently working in his final\
-                    semester as a Computer Science\
-                    Graduate Student at Worcester\
-                    Polytechnic Institute and was the\
-                    first to receive the in CyberCorps SFS\
-                    scholarship award funded by NIST.');
+            return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. First recipient of the CyberCorps SFS scholarship award funded by NSF.');
         case "Humberto":
-            return ('Bio: B.S. in Computer Science, is currently working on his M.S. in Computer Science at Worcester Polytechnic Insitutute. Humberto is also apart of the CyberCorps Scholarship for Serivce program.');     
+            return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Also a recipient of the CyberCorps Scholarship for Service program.');     
         case "Anthony":
-            return ('Bio: Help Desk Technician for The Kraft Group. Computer Information Systems B.S. from Rhode Island College. MPA Student with a Cyber Security Certificate from the University of Rhode Island.');                  
+            return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');                  
         default:
           return "Thinkr Member";
       }
@@ -33,7 +18,7 @@ const bio = bio => {
 export const headerObject = {
     headerColor: 'green',
     headerTitleText: 'About Us',
-    headerBodyText: 'The team behind Thinkr wants to do more than just give an individual a scholarship. We want to create a community of like-minded individuals that know the importance of hard work and dedication. We believe education is a human right, Our goal is to empower students with opportunities in higher education. The core mission at Thinkr today is to provide students with a scholarship and stipend to lift the financial burden higher education can impose on them. Four of the original five team members were awarded the National Institute of Science and Technologies CyberCorps: Scholarship for Service and are attending graduate school for free because of it. We want to do our part to give more people around the country an opportunity similar to our founders, but with less strings attached.'
+    headerBodyText: 'The team behind Thinkr wants to do more than just give a single person a scholarship. We want to create a community of like-minded individuals that know the importance of hard work and dedication. We believe education is a human right and our goal is to empower students with opportunities in higher education. Thinkr’s mission is to provide students with a scholarship and stipend to relieve the financial burden higher education can thrust upon them. Four of the original five team members were awarded the National Science Foundation’s CyberCrops Scholarship for Service award and are attending graduate school for free because of it. We want to do our part to give more people around the country an opportunity similar to our founders, but with less strings attached.'
 }
 
 export const dividerObject = {

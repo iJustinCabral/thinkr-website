@@ -1,7 +1,7 @@
 export const headerObject = {
     headerColor: 'blue',
     headerTitleText: 'Our Roadmap',
-    headerBodyText: "Thinkr's timeline consists of three key eras, each providing a foundational advantage to the longevity of our longterm mission and growth. We strive to provide educational advantages to students all around the globe. See how we're making this a reality!"
+    headerBodyText: "Thinkr’s timeline consists of three key eras, each providing a foundational advantage to the longevity of our long term mission and further growth. We strive to provide educational advantages to students around the globe. See how we will make this a reality. "
 }
 
 export const dividerObject = {
@@ -10,12 +10,12 @@ export const dividerObject = {
 
 export const timelineHeaderLovelace = {
     headerTitleText: 'Foundation | Lovelace Era',
-    headerBodyText: 'The Lovelace Era honors Ada Lovelace by being the foundation of our project. It will set the direction, goals, and growth of the Thinkr community. This era will encapsulate the purpose of our community by awarding a scholarship(s) to a deserving student(s) in need.  It will also set the precedence of the Dreamr DAO governance and future Thinkr utility. '
+    headerBodyText: 'The Lovelace Era honors Ada Lovelace by being the foundation of this project. It will set the direction, goals, and growth of the Thinkr community. This era will encapsulate the purpose of our community by awarding a scholarship(s) to a deserving student(s) in need. It will also set the precedence of the Dreamr DAO governance and future utility of Thinkr. '
 }
 
 export const timelineHeaderLocke = {
     headerTitleText: 'Education | Locke Era',
-    headerBodyText: 'The Locke Era honors Alain LeRoy Locke by focusing on building products centered around education. We have many plans in store, from expanding the Lovelace scholarship program, to building tools, and platforms that can help students in their quest for knowledge. We look forward to sharing more when the time comes. '
+    headerBodyText: 'The Locke Era honors Alain LeRoy Locke by building products centered around education. We have many plans in store, from expanding the Lovelace Scholarship Program, to building the tools and platforms that will assist students during their quest for knowledge. We look forward to sharing more once the time arrives. '
 }
 
 export const timelineHeaderCarmack = {
@@ -24,11 +24,11 @@ export const timelineHeaderCarmack = {
 }
 
 export const tempLockeBody = {
-        headerTitleText: 'COMING 2023..'
+        headerTitleText: 'Coming 2023...'
 }
 
 export const tempCarmackBody = {
-        headerTitleText: 'COMING 2024..'
+        headerTitleText: 'Coming 2024...'
 }
 
 export const timelineBottom = {

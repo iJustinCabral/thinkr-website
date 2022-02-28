@@ -20,6 +20,10 @@ export const HeaderSection = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
+   @media screen and (max-width: 768px) {
+    padding: 40px;
+  }
 `
 
 export const HeaderTitle = styled.h1`
