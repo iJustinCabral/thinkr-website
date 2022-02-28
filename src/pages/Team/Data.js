@@ -18,7 +18,7 @@ const bio = bio => {
 export const headerObject = {
     headerColor: 'green',
     headerTitleText: 'About Us',
-    headerBodyText: 'The team behind Thinkr wants to do more than just give a single person a scholarship. We want to create a community of like-minded individuals that know the importance of hard work and dedication. We believe education is a human right and our goal is to empower students with opportunities in higher education. Thinkr’s mission is to provide students with a scholarship and stipend to relieve the financial burden higher education can thrust upon them. Four of the original five team members were awarded the National Science Foundation’s CyberCrops Scholarship for Service award and are attending graduate school for free because of it. We want to do our part to give more people around the country an opportunity similar to our founders, but with less strings attached.'
+    headerBodyText: 'The team behind Thinkr wants to do more than just give a single person a scholarship. We want to create a community of like-minded individuals that know the importance of hard work and dedication. We believe education is a human right and our goal is to empower students with opportunities in higher education. Thinkr’s mission is to provide students with a scholarship and stipend to relieve the financial burden higher education can thrust upon them. Four of the original five team members were awarded the National Science Foundation’s CyberCorps Scholarship for Service award and are attending graduate school for free because of it. We want to do our part to give more people around the country an opportunity similar to our founders, but with less strings attached.'
 }
 
 export const dividerObject = {

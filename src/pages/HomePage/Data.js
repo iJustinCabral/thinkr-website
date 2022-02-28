@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightTopLine: false,
     lightTextDesc: false, 
     buttonLabel: 'See Our Plans',
-    description: 'Our team believes in quality, affordable, and accessible education for all. Thinkr’s core mission is the improvement of the educational system using Web3 technology. We’ll start by using NFT’s to fund a scholarship and stipend program for college students. The road ahead is long, so join us in our journey to empower students and change the education for the better. ',
+    description: 'Our team believes in quality, affordable, and accessible education for all. Thinkr’s core mission is the improvement of the educational system using Web3 technology. We’ll start by using NFT’s to fund a scholarship and stipend program for college students. The road ahead is long, so join us in our journey to empower students and change education for the better. ',
     headline: 'Be A Thinkr', 
     lightText: false, 
     topLine: 'Knowledge is Power', 
@@ -61,7 +61,7 @@ export const homeObjTwo = {
     topLine: 'Built For Students By Students',
     headline: 'About The Team',
     description:
-      'Our core team consists of five students in graduate school. Four are pursuing a Master in Computer Science Master with a specialization in Computer Security from the Worcester Polytechnic Institute. The fifth is attending the University of Rhode pursuing a Master in Public Administration with a Cyber Security Certificate. ',
+      'Our core team consists of five students in graduate school. Four are pursuing a Masters in Computer Science with a specialization in Computer Security from the Worcester Polytechnic Institute. The fifth is attending the University of Rhode pursuing a Masters in Public Administration with a Cyber Security Certificate. ',
     buttonLabel: 'Learn More About Us',
     imgStart: '',
     img: require('../../images/team.png'),
