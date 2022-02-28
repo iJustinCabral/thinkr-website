@@ -1,9 +1,9 @@
 const bio = bio => {
     switch (bio) {
         case "Justin":
-            return ("B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Self-taught programmer and designer with ten years of software development experience. CyberCrops SFS scholarship award winner.");
+            return ("B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Self-taught programmer and designer with ten years of software development experience. CyberCorps SFS scholarship award winner.");
         case "Jon":
-            return ('B.S. in Computer Science with an Associates Degrees in Information Technology and Computer Studies. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. ');
+            return ('B.S. in Computer Science with an Associates Degrees in Information Technology and Computer Studies. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. CyberCoprs SFS scholarship award winner. ');
         case "Brian":
             return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. First recipient of the CyberCorps SFS scholarship award funded by NSF.');
         case "Humberto":
