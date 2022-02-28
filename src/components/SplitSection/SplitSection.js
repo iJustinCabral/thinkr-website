@@ -67,7 +67,7 @@ const SplitSection = () => {
                        - Pay for a student(s) college degree on a per semester basis
                     </SectionBody>
                     <SectionBody>
-                        - Pay the student(s) a bi-weekly stipend of roughly $1,500 or $40,000 a year total
+                        - Pay the student(s) a bi-weekly stipend of roughly $1,500 or $40,000 a year
                     </SectionBody>
                     <SectionBody>
                     The goal we have in mind is to provide a student tuition and living stipend for the Fall 2022 Semester. Further details regarding the application process, selection process, academic requirements that need to be maintained, and more will be announced at a later date on the official DAO website www.adreamaway.org. 

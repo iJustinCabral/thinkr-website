@@ -79,7 +79,7 @@ export const homeObjTwo = {
     topLine: 'United we stand',
     headline: 'Building A Community',
     description:
-      'Thinkr is not just an Web3 company. Our team is dedicated to building a community of people that will help all of its members reach their full potential. Discord, which is one of the biggest community building platforms in the Web3 space, will be how we foster this organic growth of like minded individuals.',
+      'Thinkr is not just a Web3 company. Our team is dedicated to building a community of people that will help all of its members reach their full potential. Discord, which is one of the biggest community building platforms in the Web3 space, will be how we foster this organic growth of like minded individuals.',
     buttonLabel: 'Join The Discord',
     imgStart: '',
     img: require('../../images/collab.png'),
