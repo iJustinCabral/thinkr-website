@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, HeaderSection,  HeaderTextWrapper, HeaderTitle, TeamProfiles, TeamMember,JoinOurTeam, ProfilePic, Img1, TwitterPic, Name, Position, HiddenBio} from './BodyHeader.elements'
 
-const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, member1Pic,member2Pic, member3Pic,member4Pic,member5Pic, bio1,bio2,bio3,bio4,bio5 }) => {
+const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, member1Pic,member2Pic, member3Pic,member4Pic,member5Pic,member6Pic, bio1,bio2,bio3,bio4,bio5, bio6 }) => {
   //Keep Last TeamProfile as the "Join Our Team". Place all Others Above it!  
   //When adding in a new TeamMember, you need to add a function parameter for memberPic.
   //When adding in a new TeamMember, you need to hard code the href to their twitter.
@@ -64,6 +64,15 @@ const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, memb
           <HiddenBio>{bio5}</HiddenBio>
         </TeamMember>
 
+        <TeamMember  >
+          <ProfilePic href="https://twitter.com/NaomiMetzgerTJ">
+          <Img1 src={member6Pic}  />
+          <TwitterPic src={twitterlogo}/>
+          </ProfilePic>
+          <Name>Naomi Metzger</Name>
+          <Position>Advisor / Marketing</Position>
+          <HiddenBio>{bio6}</HiddenBio>
+        </TeamMember>
     
         <JoinOurTeam>
           <ProfilePic href="https://twitter.com/TeamThinkr">

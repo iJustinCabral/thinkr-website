@@ -9,7 +9,9 @@ const bio = bio => {
         case "Humberto":
             return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Also a recipient of the CyberCorps Scholarship for Service program.');     
         case "Anthony":
-            return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');                  
+            return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');   
+        case "Naomi":
+            return('9x British national triple jump champion. AfrochickNFT & ThreePointStart Founder')               
         default:
           return "Thinkr Member";
       }
@@ -34,11 +36,13 @@ export const teamObjOne = {
     member3Pic: require('../../images/BrianPic.png'),
     member4Pic: require('../../images/HumbertoPic.png'),
     member5Pic: require('../../images/AnthonyPic.png'),
+    member6Pic: require("../../images/NaomiPic.png"),
     bio1: bio("Justin"),
     bio2: bio("Jon"),
     bio3: bio("Brian"),
     bio4: bio("Humberto"),
-    bio5: bio("Anthony")
-    //bio6:
+    bio5: bio("Anthony"),
+    bio6: bio("Naomi")
+    //bio7:
 
 };
