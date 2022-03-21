@@ -11,7 +11,7 @@ const bio = bio => {
         case "Anthony":
             return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');   
         case "Naomi":
-            return('9x British national triple jump champion. AfrochicksNFT & ThreePointStart Founder')               
+            return('9 x British Triple Jump champion and founder and artist of AfroChicksNFT. BA in Politics and Quantitative Methods from the University of Manchester.')               
         default:
           return "Thinkr Member";
       }
