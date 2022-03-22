@@ -102,10 +102,10 @@ const SplitSection = () => {
                     - (Announcment coming later)
                     </SectionBody>
                     <SectionBody>
-                    The inspiration behind a daily Dreamr auction comes from the innovative Nouns project. A daily auction of 1 Dreamr NFT allows for a consistent volume of ETH to be placed into the DAO Treasury. With 100% of all sales from the daily Dreamr auction being placed directly into the treasury, the Lovelace Scholarship program will be funded for years to come. The auction also provides an opportunity for people who don’t own $THINK tokens or a Thinkr NFT the opportunity to be a part of what we’re building.
+                    The inspiration behind a daily Dreamr auction comes from the innovative Nouns project. A daily auction of 1 Dreamr NFT allows for a consistent volume of ETH to be placed into the DAO Treasury. With 100% of all sales from the daily Dreamr auction being placed directly into the treasury, the Lovelace Scholarship program will be funded for years to come. The auction also provides an opportunity for people who don’t own a Thinkr NFT the opportunity to be a part of what we’re building.
                     </SectionBody>
                     <SectionBody>
-                    The second way to join will be to burn 5000 $THINK tokens. This will allow a community member who holds a Thinkr (Series 1) NFT to mint a Dreamr NFT for free, except for gas fees. By burning the tokens it makes the process of joining the DAO in the future harder, rewarding those who helped us build this project from the start by increasing scarcity of access.
+                    The second way to join the DreamrDAO will be announced to the community at a later time. We have a very fun way to include the community in the process and we can't wait to share more. The DAO is designed for those who are active and commmited to our vision, so take that as a hint of what's to come.
                     </SectionBody>
                 </ContentWrapper>
 
