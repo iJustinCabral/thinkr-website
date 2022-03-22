@@ -90,7 +90,7 @@ const SplitSection = () => {
 
                 <ContentWrapper className={toggleState === 4 ? "content active-content" : "content"}>
                     <SectionTitle>
-                        Two Ways To Join
+                        How To Join
                     </SectionTitle> 
                     <SectionBody>
                         There will be two different ways for someone to acquire a Dreamr NFT and join the DAO:
@@ -99,7 +99,7 @@ const SplitSection = () => {
                     - Place the highest bid in the daily Dreamr NFT auction
                     </SectionBody>
                     <SectionBody>
-                    - Burn 5000 $THINK tokens plus the gas fees to mint a Dreamr NFT. 
+                    - (Announcment coming later)
                     </SectionBody>
                     <SectionBody>
                     The inspiration behind a daily Dreamr auction comes from the innovative Nouns project. A daily auction of 1 Dreamr NFT allows for a consistent volume of ETH to be placed into the DAO Treasury. With 100% of all sales from the daily Dreamr auction being placed directly into the treasury, the Lovelace Scholarship program will be funded for years to come. The auction also provides an opportunity for people who don’t own $THINK tokens or a Thinkr NFT the opportunity to be a part of what we’re building.

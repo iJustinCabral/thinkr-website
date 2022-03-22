@@ -15,7 +15,6 @@ function HeaderWithIcons ({headerColor, headerTitleText, headerBodyText, setTogg
             <ButtonWrapper>
               <HButton headerColor={headerColor} className= {toggleState === 1 ? "active" : ""} title="General FAQs" onClick={ () => {setToggleState(1); executeScroll()}} />
               <HButton headerColor={headerColor} className= {toggleState === 2 ? "active" : ""} title="Our NFT FAQs"  onClick={ () => {setToggleState(2); executeScroll()}}/>
-              <HButton headerColor={headerColor} className= {toggleState === 3 ? "active" : ""} title="Token FAQs" onClick={ () => {setToggleState(3); executeScroll()}} />
               <HButton headerColor={headerColor} className= {toggleState === 4 ? "active" : ""} title="Security FAQs" onClick={ () => {setToggleState(4); executeScroll()}} />
             </ButtonWrapper>
     </HeaderSection>

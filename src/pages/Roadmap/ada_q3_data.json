@@ -1,6 +1,6 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "state": "incomplete",
         "title": "Lovelace Scholarship Application Process",
         "subtitle": "If you are a Thinkr, we want you!",
@@ -9,7 +9,7 @@
         "note": ""
     },
     {
-        "id": 3,
+        "id": 2,
         "state": "incomplete",
         "title": "The Selection Process",
         "subtitle": "Sifting through the applicants",
@@ -17,7 +17,7 @@
         "note": ""
     },
     {
-        "id": 4,
+        "id": 3,
         "state": "incomplete",
         "title": "DAO Decision",
         "subtitle": "Dreamr DAO members will help us finalize the recipient of the scholarship",
@@ -25,7 +25,7 @@
         "note": ""
     },
     {
-        "id": 5,
+        "id": 4,
         "state": "incomplete",
         "title": "Awarding the Lovelace Scholarship",
         "subtitle": "Rewarding the first Thinkr",
