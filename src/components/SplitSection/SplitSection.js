@@ -27,7 +27,7 @@ const SplitSection = () => {
         <SectionContainer>
             <LeftSection>
                     <QuestionItem className={toggleState === 1 ? "active" : ""} onClick={() => toggleContent(1)}>
-                        Why does The Dreamr DAO need to exist?
+                        Why does The Thinkr DAO need to exist?
                     </QuestionItem >
                     <QuestionItem className={toggleState === 2 ? "active" : ""} onClick={() => toggleContent(2)}> 
                         What's the Lovelace Scholarship Program?
@@ -36,10 +36,10 @@ const SplitSection = () => {
                         Who's eligible to recieve the scholarship?
                     </QuestionItem>
                     <QuestionItem className={toggleState === 4 ? "active" : ""} onClick={() => toggleContent(4)}>
-                        How can someone join The Dreamr DAO?
+                        How can someone join The Thinkr DAO?
                     </QuestionItem>
                     <QuestionItem className={toggleState === 5 ? "active" : ""} onClick={() => toggleContent(5)}>
-                        When will you launch The Dreamr DAO?
+                        When will you launch The Thinkr DAO?
                     </QuestionItem>
             </LeftSection>
 
@@ -61,7 +61,7 @@ const SplitSection = () => {
                         A Scholarship Full of Love
                     </SectionTitle> 
                     <SectionBody>
-                    The Lovelace Scholarship Program was designed by the Thinkr team and will be the first proposal The Dreamr DAO council members vote on. It will do the following:
+                    The Lovelace Scholarship Program was designed by the Thinkr team and will be the first proposal The Thinkr Founders in tandem with the community will decide on the first 3 recipients. It will do the following:
                     </SectionBody>
                     <SectionBody>
                        - Pay for a student(s) college degree on a per semester basis
@@ -73,7 +73,7 @@ const SplitSection = () => {
                     The goal we have in mind is to provide a student tuition and living stipend for the Fall 2022 Semester. Further details regarding the application process, selection process, academic requirements that need to be maintained, and more will be announced at a later date on the official DAO website www.adreamaway.org. 
                     </SectionBody>
                     <SectionBody>
-                        The Scholarship is funded by 60% of all future Thinkr NFT series, and 100% of all Dreamr NFT auction sales. We believe this will allows us to not only fund this scholarship, but help us build more Web3 products in the future to help change students' lives. Knowing how important a scholarship opportunity like this was to the founders of Thinkr, we couldn’t be more excited to bring this opportuntity to more people. 
+                    The Scholarship is funded by all future Thinkr NFT collections. We believe this will allow us to not only fund this scholarship but help us build more Web3 products in the future to help change students' lives. Knowing how important a scholarship opportunity like this was to the founders of Thinkr, we couldn’t be more excited to bring this opportunity to more people. 
                     </SectionBody>
                 </ContentWrapper>
 
@@ -93,28 +93,32 @@ const SplitSection = () => {
                         How To Join
                     </SectionTitle> 
                     <SectionBody>
-                        There will be two different ways for someone to acquire a Dreamr NFT and join the DAO:
+                        There will be three different ways for someone to join the DAO:
                     </SectionBody>
                     <SectionBody>
-                    - Place the highest bid in the daily Dreamr NFT auction
+                    - Own a Thinkr NFT
                     </SectionBody>
                     <SectionBody>
                     - (Announcment coming later)
                     </SectionBody>
                     <SectionBody>
-                    The inspiration behind a daily Dreamr auction comes from the innovative Nouns project. A daily auction of 1 Dreamr NFT allows for a consistent volume of ETH to be placed into the DAO Treasury. With 100% of all sales from the daily Dreamr auction being placed directly into the treasury, the Lovelace Scholarship program will be funded for years to come. The auction also provides an opportunity for people who don’t own a Thinkr NFT the opportunity to be a part of what we’re building.
+                    - (Announcment coming later)
                     </SectionBody>
                     <SectionBody>
-                    The second way to join the DreamrDAO will be announced to the community at a later time. We have a very fun way to include the community in the process and we can't wait to share more. The DAO is designed for those who are active and commmited to our vision, so take that as a hint of what's to come.
+                    The easiest way for someone to gain access to our DAO in the future is to own a Thinkr from our NFT collection. While we can’t share the other two ways someone will be able to join at this time, rest assured because we have exciting announcements for the community. We’re planning to have a very fun way to include the community in the process and we can't wait to share more. The DAO is designed for those who are active and committed to our vision, so take that as a hint of what's to come.
                     </SectionBody>
+                    <SectionBody>
+                    We look forward to building the future of education in Web 3 with the help from our community. Exciting times are ahead and we're ready for any and all challenges that we may face.
+                    </SectionBody>
+                   
                 </ContentWrapper>
 
                 <ContentWrapper className={toggleState === 5 ? "content active-content" : "content"}>
                     <SectionTitle>
-                        Launching Q2/2022
+                        Launching Q4/2022
                     </SectionTitle> 
                     <SectionBody>
-                    The Dreamr DAO will launch simultaneously alongside the Thinkr (Series 1) NFT collection during Q2/2022. The website where you will be able to vote, and create proposals to help change peoples lives will be www.adreamaway.org. Everyone is just a dream away from a better life. Join us, and let's help make those dreams a reality for more and more people.
+                    The Thinkr DAO will launch during Q4/2022. The website where you will be able to vote, and create proposals to help change peoples lives will be www.adreamaway.org. Everyone is just a dream away from a better life. Join us, and let's help make those dreams a reality for more and more people.
                     </SectionBody>
                     <SectionBody>
                         <SectionPhoto src={adaIcon} />

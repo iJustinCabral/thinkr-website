@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 2,
         "state": "incomplete",
         "title": "Lovelace Scholarship Application Process",
         "subtitle": "If you are a Thinkr, we want you!",
@@ -9,27 +9,19 @@
         "note": ""
     },
     {
-        "id": 2,
+        "id": 3,
         "state": "incomplete",
         "title": "The Selection Process",
         "subtitle": "Sifting through the applicants",
-        "para": "Beginning the process of choosing the finalists for the Lovelace Scholarship with the help of The Dreamr DAO members. We look forward to working with our community on what will be a life changing event for students. ",
-        "note": ""
-    },
-    {
-        "id": 3,
-        "state": "incomplete",
-        "title": "DAO Decision",
-        "subtitle": "Dreamr DAO members will help us finalize the recipient of the scholarship",
-        "para": "The members of the Dreamr DAO will evaluate the final ten applicants for The Lovelace Scholarship. Community members who receive the highest rarity tier of our Thinkr (Series 1) NFT collection will have an opportunity to mint a free Dreamr NFT, which permits access at the DAO.",
+        "para": "Beginning the process of choosing the finalists for the Lovelace Scholarship with the help of the community. We look forward to working with our community on what will be a life changing event for students. ",
         "note": ""
     },
     {
         "id": 4,
         "state": "incomplete",
         "title": "Awarding the Lovelace Scholarship",
-        "subtitle": "Rewarding the first Thinkr",
-        "para": "The first recipient of The Lovelace Scholarship will be chosen by the Dreamr DAO. The Thinkr community has made the first steps toward changing higher education for the better.",
+        "subtitle": "Rewarding the first student(s)",
+        "para": "The first recipient of The Lovelace Scholarship will be chosen by the founders. With the help of the Thinkr community has made the first steps toward changing higher education for the better.",
         "note": ""
     }
 ]

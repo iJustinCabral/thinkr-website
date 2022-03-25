@@ -39,9 +39,9 @@
     {
         "id": 5,
         "state": "inprogress",
-        "title": " DAO, Tokenomics, and Smart Contract Planning",
+        "title": " Smart Contract Planning",
         "subtitle": "Structural Planning in Progress",
-        "para": "Architecting Thinkr’s NFT Smart contract deployment plans, $THINK tokenomics, $THINK utility, and the Dreamr DAO.",
+        "para": "Architecting Thinkr’s NFT Smart contract and minting contract.",
         "note": ""
     }
 ]

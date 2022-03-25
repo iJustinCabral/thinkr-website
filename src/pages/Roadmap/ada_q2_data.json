@@ -27,17 +27,9 @@
     {
         "id": 5,
         "state": "incomplete",
-        "title": "Thinkr (Series 1) NFT Mint Date",
-        "subtitle": "Dutch Auction and Mint Prices",
-        "para": "Unveil and announce our Thinkr (Series 1) NFT collection. Announcement will include when the collection can be minted and the community chosen prices that can be expected during the Dutch Auction.",
-        "note": ""
-    },
-    {
-        "id": 6,
-        "state": "incomplete",
-        "title": "The Dreamr DAO Opening Day",
-        "subtitle": "Details on the official launch",
-        "para": "Revealing The Dreamer DAO and the Dreamr NFT required for access. Also starting the process of educating the community about how they can join, vote, and more. The Dreamr DAO serves as a fundamental layer of our community engagement so we can’t wait to share more with you about this aspect of our project.",
+        "title": "Thinkr Collection NFT Mint Date",
+        "subtitle": "Presale and Public sale",
+        "para": "Announce the date and times for Thinkr NFT collection presale and public sale.",
         "note": ""
     }
 ]

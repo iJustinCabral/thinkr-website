@@ -22,9 +22,9 @@ export const homeObjTwo = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'A Dream Away',
-    headline: 'The Dreamr DAO',
+    headline: 'The Thinkr DAO',
     description:
-      "The Dreamr DAO is a decentralized autonomous orginization that will work in conjunction with our future NFTs. Together they will empower students by allowing voting on the winners of the scholarship/stipend program and so much more. Everyone is just a dream away from changing their lives, and this DAO is designed to help make those dreams a reality.",
+      "The Thinkr DAO will be a decentralized autonomous orginization that will work in conjunction with our future NFTs. Together they will empower students by allowing voting on the winners of the scholarship/stipend program and so much more. Everyone is just a dream away from changing their lives, and this DAO is designed to help make those dreams a reality.",
     buttonLabel: 'Learn More Here',
     imgStart: '',
     img: require('../../images/fire.png'),
@@ -43,7 +43,7 @@ export const homeObjTwo = {
     headline:
       'Our Roadmap',
     description:
-      "Our roadmap will cover the next three years, starting with the Lovelace Era in 2022. This period will focus on the project's core foundation, the creation of our Thinkr (Series 1) NFT collection, and Dreamr DAO. The sale of NFT’s will fund the DAO and provide students chosen by the DAO with a scholarship and stipend for the Fall 2022 Semester.",
+      "Our roadmap will cover the next three years, starting with the Lovelace Era in 2022. This period will focus on the project's core foundation, the creation of our Thinkr  NFT collection, and the Thinkr DAO. The sale of NFT’s will fund the community treasury and provide students chosen by the founders with a scholarship and stipend for the Fall 2022 Semester.",
     buttonLabel: 'See The Full Roadmap',
     imgStart: 'start',
     img: require('../../images/roadmap.png'),
