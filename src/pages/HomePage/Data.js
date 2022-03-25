@@ -24,7 +24,7 @@ export const homeObjTwo = {
     topLine: 'A Dream Away',
     headline: 'The Thinkr DAO',
     description:
-      "The Thinkr DAO will be a decentralized autonomous orginization that will work in conjunction with our future NFTs. Together they will empower students by allowing voting on the winners of the scholarship/stipend program and so much more. Everyone is just a dream away from changing their lives, and this DAO is designed to help make those dreams a reality.",
+      "The Thinkr DAO will be a decentralized autonomous organization that will work in conjunction with our future NFTs. Together they will empower students by allowing voting on the winners of the scholarship/stipend program and so much more. Everyone is just a dream away from changing their lives, and this DAO is designed to help make those dreams a reality.",
     buttonLabel: 'Learn More Here',
     imgStart: '',
     img: require('../../images/fire.png'),

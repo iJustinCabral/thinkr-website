@@ -20,7 +20,7 @@
     },
     {
         "id": 3,
-        "state": "inprogress",
+        "state": "done",
         "title": "Announcing the Lovelace Scholarship Program",
         "subtitle": "Letting the World Know",
         "para": "The Lovelace Scholarship Program is one of the many ways we plan on using Web3 technology to revolutionize the relationship students have with higher education. We plan on getting the word out there about what we’re building and how it will impact lives in a tangible way.",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "state": "inprogress",
+        "state": "done",
         "title": "Recruit more Thinkrs!",
         "subtitle": "We need more Thinkrs like you!",
         "para": "Thinkr is in the early community and structural development stages. As our project grows, we will continue looking for talented, diverse, and open-minded members that bring value to our team.",
@@ -38,7 +38,7 @@
     },
     {
         "id": 5,
-        "state": "inprogress",
+        "state": "done",
         "title": " Smart Contract Planning",
         "subtitle": "Structural Planning in Progress",
         "para": "Architecting Thinkr’s NFT Smart contract and minting contract.",
