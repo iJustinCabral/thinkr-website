@@ -10,7 +10,7 @@ export const dividerObject = {
 
 export const timelineHeaderLovelace = {
     headerTitleText: 'Foundation | Lovelace Era',
-    headerBodyText: 'The Lovelace Era honors Ada Lovelace by being the foundation of this project. It will set the direction, goals, and growth of the Thinkr community. This era will encapsulate the purpose of our community by awarding a scholarship(s) to a deserving student(s) in need. It will also set the precedence of the Dreamr DAO governance and future utility of Thinkr. '
+    headerBodyText: 'The Lovelace Era honors Ada Lovelace by being the foundation of this project. It will set the direction, goals, and growth of the Thinkr community. This era will encapsulate the purpose of our community by awarding a scholarship(s) to a deserving student(s) in need. It will also set the precedence of the Thinkr DAO governance and future utility Thinkr will provide. '
 }
 
 export const timelineHeaderLocke = {

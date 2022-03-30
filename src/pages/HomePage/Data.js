@@ -85,7 +85,7 @@ export const homeObjTwo = {
     img: require('../../images/collab.png'),
     alt: 'Vault',
     start: '',
-    url: 'https:/discord.gg/BqtPsfCNfF'
+    url: 'https:/discord.gg/thinkr'
   };
 
   export const homeObjSix = {
