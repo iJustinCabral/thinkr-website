@@ -63,17 +63,7 @@ const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, memb
           <Position>Community Manager / Public Policy</Position>
           <HiddenBio>{bio5}</HiddenBio>
         </TeamMember>
-
-        <TeamMember  >
-          <ProfilePic href="https://twitter.com/NaomiMetzgerTJ">
-          <Img1 src={member6Pic}  />
-          <TwitterPic src={twitterlogo}/>
-          </ProfilePic>
-          <Name>Naomi Metzger</Name>
-          <Position>Advisor / Marketing</Position>
-          <HiddenBio>{bio6}</HiddenBio>
-        </TeamMember>
-
+        
         <TeamMember  >
           <ProfilePic href="https://www.instagram.com/yyao.art/?hl=en">
           <Img1 src={member7Pic}  />
