@@ -10,10 +10,10 @@ const bio = bio => {
             return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Also a recipient of the CyberCorps Scholarship for Service program.');     
         case "Anthony":
             return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');   
-        case "Naomi":
-            return('9 x British Triple Jump champion and founder and artist of AfroChicksNFT. BA in Politics and Quantitative Methods from the University of Manchester.');
         case "Yimeng":
-            return('Graphic Design B.F.A student attending Rhode Island School of Design (class of 2023). Currently studying abroad in Rome. Has experience working on the city’s cultural-tourist advertisement and visual identity systems. ')               
+            return('Graphic Design B.F.A student attending Rhode Island School of Design (class of 2023). Currently studying abroad in Rome. Has experience working on the city’s cultural-tourist advertisement and visual identity systems. ');
+        case "Nuo":
+            return('B.F.A in Graphic Design at Rhode Island School of Design. Currently pursuing M.F.A in Design at University of Southern California. 58th GDUSA, American Graphic Design Award Winner.')               
         default:
           return "Thinkr Member";
       }
@@ -38,15 +38,15 @@ export const teamObjOne = {
     member3Pic: require('../../images/BrianPic.png'),
     member4Pic: require('../../images/HumbertoPic.png'),
     member5Pic: require('../../images/AnthonyPic.png'),
-    member6Pic: require("../../images/NaomiPic.png"),
     member7Pic: require("../../images/YimengPic.png"),
+    member8Pic: require('../../images/NuoPic.png'),
     bio1: bio("Justin"),
     bio2: bio("Jon"),
     bio3: bio("Brian"),
     bio4: bio("Humberto"),
     bio5: bio("Anthony"),
-    bio6: bio("Naomi"),
-    bio7: bio("Yimeng")
+    bio7: bio("Yimeng"),
+    bio8: bio("Nuo"),
     //bio7:
 
 };
