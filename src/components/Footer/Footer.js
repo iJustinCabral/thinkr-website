@@ -26,7 +26,7 @@ const Footer = () => {
                 </SocialLogo>
                 
                 <WebsiteRights>
-                    © Copyright 2014-2022 Thinkrᴳᴹ All rights reserved. 
+                    © Copyright 2022 Thinkr Labsᴳᴹ LLC All rights reserved. 
                 </WebsiteRights>
 
                 <SocialIcons>
