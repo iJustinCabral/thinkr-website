@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, HeaderSection,  HeaderTextWrapper, HeaderTitle, TeamProfiles, TeamMember,JoinOurTeam, ProfilePic, Img1, TwitterPic, Name, Position, HiddenBio} from './BodyHeader.elements'
 
-const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, member1Pic,member2Pic, member3Pic,member4Pic,member5Pic,member7Pic,member8Pic, bio1,bio2,bio3,bio4,bio5, bio7, bio8 }) => {
+const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, member1Pic,member2Pic, member3Pic,member4Pic,member5Pic,member7Pic,member8Pic,member9Pic, bio1,bio2,bio3,bio4,bio5, bio7, bio8, bio9 }) => {
   //Keep Last TeamProfile as the "Join Our Team". Place all Others Above it!  
   //When adding in a new TeamMember, you need to add a function parameter for memberPic.
   //When adding in a new TeamMember, you need to hard code the href to their twitter.
@@ -82,6 +82,16 @@ const BodyHeader = ({headerColor, headerTitleText, twitterlogo, thinkrLogo, memb
           <Name>Nuo Zheng</Name>
           <Position>Artist / Branding / Visual Design</Position>
           <HiddenBio>{bio8}</HiddenBio>
+        </TeamMember>
+
+        <TeamMember  >
+          <ProfilePic href="https://twitter.com/alpoppanft">
+          <Img1 src={member9Pic}  />
+          <TwitterPic src={twitterlogo}/>
+          </ProfilePic>
+          <Name>Brian Alisch</Name>
+          <Position>Community Management / Engagement</Position>
+          <HiddenBio>{bio9}</HiddenBio>
         </TeamMember>
     
         <JoinOurTeam>
