@@ -6,6 +6,7 @@ import Dao from './pages/DAO/Dao'
 import Roadmap from './pages/Roadmap/Roadmap'
 import Team from './pages/Team/Team'
 import Faq from './pages/FAQ/Faq'
+import Scholarship from './pages/Scholarship/Scholarship';
 import ScrollToTop from './components/ScollToTop';
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/roadmap' element={<Roadmap />} />
           <Route path='/team' element={<Team />} />
           <Route path='/faq' element={<Faq />} />
+          <Route path='/love' element={<Scholarship />} />
         </Routes>
         <Footer />
     </Router>

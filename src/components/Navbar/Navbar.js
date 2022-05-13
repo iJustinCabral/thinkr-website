@@ -72,6 +72,12 @@ const Navbar = () => {
                             FAQ
                         </NavLinks>
                     </NavItem>
+
+                    <NavItem>
+                        <NavLinks to='/love'>
+                            Scholarship
+                        </NavLinks>
+                    </NavItem>
                
                 </NavMenu>
 

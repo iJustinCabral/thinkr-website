@@ -61,7 +61,7 @@ export const homeObjTwo = {
     topLine: 'Built For Students By Students',
     headline: 'About The Team',
     description:
-      'Our core team consists of five students in graduate school. Four are pursuing a Masters in Computer Science with a specialization in Computer Security from Worcester Polytechnic Institute. The fifth is attending the University of Rhode Island pursuing a Masters in Public Administration with a Cyber Security Certificate. ',
+      'Our founding team members consists of eight people, with seven being students currently enrolled in undergraduate or graduate studies. Four are pursuing a M.S. in Computer Science with a specialization in Computer Security from Worcester Polytechnic Institute. One is attending the University of Rhode Island pursuing a M.P.A. with a Cyber Security Graduate Certificate. One of our artists graduated from the Rhode Island Shool of Design with a B.F.A and is currently studying at USC pursuing a M.F.A. Our other artsit is also studying at RISD in pursuit of a B.F.A. Our last founding memeber has years of leadership experience working at Fortune 500 companies. ',
     buttonLabel: 'Learn More About Us',
     imgStart: '',
     img: require('../../images/team.png'),
@@ -85,7 +85,7 @@ export const homeObjTwo = {
     img: require('../../images/collab.png'),
     alt: 'Vault',
     start: '',
-    url: 'https:/discord.gg/thinkr'
+    url: 'https://discord.gg/thinkr'
   };
 
   export const homeObjSix = {

@@ -26,7 +26,7 @@ const Footer = () => {
                 </SocialLogo>
                 
                 <WebsiteRights>
-                    © Copyright 2022 Thinkr Labs LLC All rights reserved. 
+                    © Copyright 2022 Thinkr Labs LLC. 
                 </WebsiteRights>
 
                 <SocialIcons>
@@ -38,17 +38,6 @@ const Footer = () => {
                         <FaDiscord />
                     </SocialIconLink>
 
-                    <SocialIconLink href='https://www.twitch.tv/teamthinkr' target='_blank' aria-label='Twitch'>
-                        <FaTwitch />
-                    </SocialIconLink>
-
-                    <SocialIconLink href='https://www.youtube.com/channel/UCAm6kXJOLC0go_E9d5WPPSg' target='_blank' aria-label='Youtube'>
-                        <FaYoutube />
-                    </SocialIconLink>
-
-                    <SocialIconLink href='https://www.instagram.com/teamthinkr/?hl=en' target='_blank' aria-label='Instagram'>
-                        <FaInstagram />
-                    </SocialIconLink>
                 </SocialIcons>
 
             </SocialMediaWrap>
@@ -59,3 +48,17 @@ const Footer = () => {
 };
 
 export default Footer;
+
+/*
+<SocialIconLink href='https://www.twitch.tv/teamthinkr' target='_blank' aria-label='Twitch'>
+<FaTwitch />
+</SocialIconLink>
+
+<SocialIconLink href='https://www.youtube.com/channel/UCAm6kXJOLC0go_E9d5WPPSg' target='_blank' aria-label='Youtube'>
+<FaYoutube />
+</SocialIconLink>
+
+<SocialIconLink href='https://www.instagram.com/teamthinkr/?hl=en' target='_blank' aria-label='Instagram'>
+<FaInstagram />
+</SocialIconLink>
+*/

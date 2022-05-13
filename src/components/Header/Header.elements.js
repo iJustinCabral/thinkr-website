@@ -10,6 +10,8 @@
             return "#49BA6F";
           case "orange":
             return "#F49B1D";
+          case "red":
+            return "#C13A2C";
           default:
             return "#fff";
       }
