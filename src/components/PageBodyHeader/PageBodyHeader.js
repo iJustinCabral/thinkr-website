@@ -1,11 +1,11 @@
 import React from 'react'
 import { TitleSection, TitleText } from './PageBodyHeader.elements'
 
-const PageBodyHeader = () => {
+const PageBodyHeader = ({txt}) => {
   return <>
     <TitleSection>
         <TitleText>
-            Coming Soon
+            {txt}
         </TitleText>
     </TitleSection>
   </>
