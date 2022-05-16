@@ -34,7 +34,7 @@ const Footer = () => {
                         <FaTwitter />
                     </SocialIconLink>
 
-                    <SocialIconLink href='https://discord.gg/BqtPsfCNfF' target='_blank' aria-label='Discord'>
+                    <SocialIconLink href='https://discord.gg/thinkr' target='_blank' aria-label='Discord'>
                         <FaDiscord />
                     </SocialIconLink>
 
