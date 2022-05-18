@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 340px;
+    min-width: 340px;
     height: 480px;
     text-align: left;
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
@@ -26,7 +27,7 @@ export const Image = styled.img`
 
 export const Text = styled.div`
     display: block;
-    max-height: 0px;
+    max-height: 200px;
     border-radius: 22px;
     position: relative;
     padding: 0 16px;

@@ -7,6 +7,7 @@ import Roadmap from './pages/Roadmap/Roadmap'
 import Team from './pages/Team/Team'
 import Faq from './pages/FAQ/Faq'
 import Scholarship from './pages/Scholarship/Scholarship';
+import ScholarshipInfo from './pages/Scholarship/ScholarshipInfo';
 import ScrollToTop from './components/ScollToTop';
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/team' element={<Team />} />
           <Route path='/faq' element={<Faq />} />
           <Route path='/love' element={<Scholarship />} />
+          <Route path='/love-info' element={<ScholarshipInfo />} />
         </Routes>
         <Footer />
     </Router>

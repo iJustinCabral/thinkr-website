@@ -321,8 +321,8 @@ background-color: #F2F5F9;
 }
 
 /* Surface Duo Horizontal view fix */
-@media only screen and (device-width: 720px) {
+@media only screen and (min-width:590px) and (max-width: 800px) {
   .circle-img img{
-        top: 0px;
+        margin-top: 30px;
   }
 }
