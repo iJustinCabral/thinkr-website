@@ -9,6 +9,7 @@ import Faq from './pages/FAQ/Faq'
 import Scholarship from './pages/Scholarship/Scholarship';
 import ScholarshipInfo from './pages/Scholarship/ScholarshipInfo';
 import ScrollToTop from './components/ScollToTop';
+import ScholarshipApplication from './pages/Scholarship/ScholarshipApplication';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/faq' element={<Faq />} />
           <Route path='/love' element={<Scholarship />} />
           <Route path='/love-info' element={<ScholarshipInfo />} />
+          <Route path='/love-application' element={<ScholarshipApplication />} />
         </Routes>
         <Footer />
     </Router>

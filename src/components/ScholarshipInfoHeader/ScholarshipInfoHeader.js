@@ -1,8 +1,17 @@
 import React from 'react'
+import AdaBadge from '../../images/AdaBadge.png'
+import { HeaderContainer, Image, Text, Divider} from './ScholarshipInfoHeader.elements'
 
-const ScholarshipInfoHeader = () => {
+const ScholarshipInfoHeader = ({txt}) => {
   return (
-    <div>ScholarshipInfoHeader</div>
+    <>
+        <HeaderContainer>
+            <Image src={AdaBadge} />
+            <Text> {txt} </Text>
+        </HeaderContainer>
+
+        <Divider />
+    </>
   )
 }
 
