@@ -20,6 +20,11 @@ export const Form = styled.form`
 export const Field = styled.label`
     padding: 10px;
     margin-bottom: 6px;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0px 0px 2px red;
+    }
 `
 
 export const SubmitButton = styled.button`
@@ -39,4 +44,15 @@ export const SubmitButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
+    &:hover {
+        transition: all 0.2s ease-out;
+        background: #fff;
+        background: green;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
 `
