@@ -13,8 +13,7 @@ export const Form = styled.form`
     box-sizing: border-box;
 
     display  : grid;
-    grid-template-columns : repeat(3, 1fr);
-    grid-template-rows    : 10em 1em 1em 1em;
+    grid-template-columns : 1fr 2fr;
 `
 
 export const Field = styled.label`
@@ -51,8 +50,11 @@ export const SubmitButton = styled.button`
         background: #fff;
         background: green;
     }
+`
 
-    @media screen and (max-width: 960px) {
-        width: 100%;
-    }
+export const Divider = styled.hr`
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 2px solid #000;
 `
