@@ -4,20 +4,28 @@
 }
 
 /* Alternates background color for every other quarter*/
+
+/* Q2 */
 .timeline:nth-child(4n-1) {
 background-color: #DFEDFF;
 }
 
+/* Q1 */
 .timeline:nth-child(4n-2) {
 background-color: #fff;
+z-index: 6;
 }
 
+/* Q4 */
 .timeline:nth-child(4n-3) {
 background-color: #fff;
+
 }
 
+/* Q3 */
 .timeline:nth-child(4n-4) {
 background-color: #F2F5F9;
+
 }
 
 .col-card-left {
@@ -168,7 +176,7 @@ background-color: #F2F5F9;
     position: relative;
     border-radius: 50%;
     border: 3px solid white;
-    z-index: 3;
+    z-index: 6;
     box-shadow:0 0 0 4px hsl(0, 0%, 100%),inset 0 2px 0 rgba(0,0,0,0.08),0 3px 0 4px rgba(0,0,0,0.05);
 }
 
@@ -207,11 +215,11 @@ background-color: #F2F5F9;
 /* Just change the pixel height as we progress */
 .verticaline-done {
       border-left: 6px solid #5CE88B;
-      height: 105%;
       position: absolute;
+      height: 1450px;
       left: 49.86%;
       top: -3%;
-      z-index: 2;
+      z-index: -1;
       /* glow */
       box-shadow: 0px 0px 5px 2px #5CE88B;
 }
@@ -255,7 +263,9 @@ background-color: #F2F5F9;
 }
 
 
-/* For mobile devices up to 1300px width */
+/* For mobile devices up to 1300px width 
+   Adjust green line vertical height for mobile devices with larger width
+*/
 @media only screen and (max-width: 1300px) {
   [class*="circle"] {
     width: 35px;
@@ -266,7 +276,7 @@ background-color: #F2F5F9;
     position: relative;
     border-radius: 50%;
     border: 3px solid white;
-    z-index: 3;
+    z-index: 6;
     box-shadow:0 0 0 4px hsl(0, 0%, 100%),inset 0 2px 0 rgba(0,0,0,0.08),0 3px 0 4px rgba(0,0,0,0.05);
   }
 
@@ -277,9 +287,15 @@ background-color: #F2F5F9;
   [class="numberCircle"]{
     font-size: 0.6rem;
   }
+
+  .verticaline-done{
+    height: 160%;
+  }
 }
 
-/* For mobile devices up to 800px width, the logo was not directly in the circles so needed to offset from the top */
+/* For mobile devices up to 800px width, the logo was not directly in the circles so needed to offset from the top 
+   Adjust green line vertical height for mobile devices with smaller width
+*/
 @media only screen and (max-width: 800px) {
   .circle-img img{
         top: -30px;
@@ -288,9 +304,18 @@ background-color: #F2F5F9;
   .verticaline-done{
     left: 50%;
     border-left: 2px solid #5CE88B;
-    height: 105%;
+    height: 170%;
   }
 }
+
+/* Adjust green line vertical height for mobile devices in horizontal view */
+
+@media only screen and (max-height: 400px) {
+  
+    .verticaline-done{
+      height: 162%;
+    }
+  }
 
 /* iPad mini logo would appear above circles*/
 @media only screen and (device-width: 768px) {
@@ -303,20 +328,6 @@ background-color: #F2F5F9;
 @media only screen and (max-width: 375px) {
   .quarter {
       font-size: 3.5rem;
-  }
-}
-
-/* iPhone SE Horizontal view fix */
-@media only screen and (device-width: 667px) {
-  .circle-img img{
-        top: 0px;
-  }
-}
-
-/* Samsung Galaxy S8+ Horizontal view fix */
-@media only screen and (device-width: 740px) {
-  .circle-img img{
-        top: 0px;
   }
 }
 

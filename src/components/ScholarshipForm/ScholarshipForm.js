@@ -1,7 +1,12 @@
 import React, {useState} from 'react'
-import { db } from '../../firebase'
+import { db, storage } from '../../firebase'
 import { collection, addDoc } from 'firebase/firestore'
-import { Container, Form, Field, SubmitButton, Divider } from './ScholarshipForm.elements'
+import { ref, uploadBytes } from 'firebase/storage'
+import { v4 } from  'uuid'
+import { Container, Form, Field, SubmitButton, Input, FileInput, FormWrapper } from './ScholarshipForm.elements'
+
+//TODO: set required fields, do not let user hit submit if fields/uploads are not filled out
+//TODO: style the forms correctly
 
 const ScholarshipForm = () => {
 
@@ -11,18 +16,20 @@ const ScholarshipForm = () => {
   const [phone, setPhone] = useState("");
   const [college, setCollege] = useState("");
   const [year, setYear] = useState("");
-  const [resume, setResume] = useState("");
+  const [resume, setResume] = useState(null);
+  const [statement, setStatement] = useState(null);
+  const [schedule, setSchedule] = useState(null);
   const [reference, setReference] = useState("");
-
-
-
-
   const [loader, setLoader] = useState(false)
 
   const handleSubmit = async (e) => {
       e.preventDefault();
-
+    
       setLoader(true)
+
+      const resumeRef = ref(storage, `resumes/${resume.name + v4()}`)
+      const statementRef = ref(storage, `statements/${statement.name + v4()}`)
+      const scheduleRef = ref(storage, `schedules/${schedule.name + v4()}`)
 
       const docRef = await addDoc(collection(db, "scholarship-application"), {
             firstName: firstName,
@@ -31,12 +38,18 @@ const ScholarshipForm = () => {
             phone: phone,
             college: college,
             year: year,
-            resume: resume,
             reference: reference,
+      }).then(() => {
+        uploadBytes(resumeRef, resume)
+        uploadBytes(statementRef, statement)
+        uploadBytes(scheduleRef, schedule)  
       })
       .then(() => {
-          alert("Your Application has been submitted!")
+          alert("Your Application has been submitted! We will reach out to you by email if you're being considered.")
           setLoader(false)
+      })
+      .then(() => {
+          window.location.href="https://thinkr.online";  
       })
       .catch(error => {
           alert(error.message)
@@ -50,91 +63,92 @@ const ScholarshipForm = () => {
       setCollege('')
       setYear('')
       setReference('')
+      setResume(null)
+      setStatement(null)
+      setSchedule(null)
   }
 
 
   return (
     <>
         <Container>
+            <FormWrapper>
             <Form onSubmit={handleSubmit}>
+
                 <Field>
                     <h4>Name</h4>
-                    <input name="first_name" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
-                    <h6>First Name</h6>
+                    <Input required name="first_name"  value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+                    <h5>First Name</h5>
                 </Field>
 
                 <Field>
                     <h4 style={{color: 'white'}}>-</h4>
-                    <input name="last_name" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
-                    <h6>Last Name</h6>
+                    <Input required name="last_name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                    <h5>Last Name</h5>
                 </Field>
 
                 <Field>
                     <h4>College Email</h4>
-                    <input name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                    <h6>example@university.com</h6>
+                    <Input required name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <h5>example@college.com</h5>
                 </Field>
 
                 <Field>
                     <h4>Phone Number</h4>
-                    <input name="phone" type="number" value={phone} onChange={(e) => setPhone(e.target.value)}/>
-                    <h6>Ex: 555-555-5555</h6>
+                    <Input required name="phone" type="number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                    <h5>Ex: 555-555-5555</h5>
                 </Field>
 
                 <Field>
                     <h4>College of Attendance</h4>
-                    <input name="college" value={college} onChange={(e) => setCollege(e.target.value)}/>
-                    <h6>Example University</h6>
+                    <Input required name="college" value={college} onChange={(e) => setCollege(e.target.value)} />
+                    <h5>Example University</h5>
                 </Field>
 
                 <Field>
                     <h4>Academic Year</h4>
-                    <input name="year" value={year} onChange={(e) => setYear(e.target.value)}/>
-                    <h6>Ex: Freshman</h6>
+                    <Input requried name="year" value={year} onChange={(e) => setYear(e.target.value)} />
+                    <h5>Ex: Freshman</h5>
                 </Field>
 
-            </Form>
-
             <h3>Experience / Whats your why?</h3>
-            <Divider/>
-
-            <Form>
+            <h3></h3>
+       
                 <Field>
                     <h4>Resume</h4>
-                    <input name="resume" type="file" value={resume} onChange={(e) => setResume(e.target.value)}/>
-                    <h6>PDF / .Docx</h6>
+                    <FileInput required name="resume" type="file" onChange={(e) => setResume(e.target.files[0])} />
+                    <h5>PDF / .Docx</h5>
                 </Field>
 
                 <Field>
                     <h4>Statement of Interest</h4>
-                    <input name="resume" type="file" value={resume} onChange={(e) => setResume(e.target.value)}/>
-                    <h6>1,000 word minimum</h6>
+                    <FileInput required name="statement" type="file" onChange={(e) => setStatement(e.target.files[0])} />
+                    <h5>1,000 word minimum</h5>
                 </Field>
-            </Form>
+            
 
             <h3>Proof of Enrollment</h3>
-            <Divider/>
-
-            <Form>
-                <Field>
-                    <h4>Current Class Schedule</h4>
-                    <input name="resume" type="file" value={resume} onChange={(e) => setResume(e.target.value)}/>
-                    <h6>Image or PDF</h6>
-                </Field>
+            <h3></h3>
 
                 <Field>
                     <h4>Reference Email</h4>
-                    <input name="reference" value={reference} onChange={(e) => setReference(e.target.value)}/>
-                    <h6>Must be professor at current college</h6>
+                    <Input required name="reference" value={reference} onChange={(e) => setReference(e.target.value)} />
+                    <h5>Professor or Advisor at current college</h5>
                 </Field>
-            </Form>
 
+                <Field>
+                    <h4>Current Class Schedule</h4>
+                    <FileInput required id="schedule" name="schedule" type="file" onChange={(e) => setSchedule(e.target.files[0])} />
+                    <h5>Image or PDF</h5>
+                </Field>
 
+                <SubmitButton
+                    type="submit" 
+                    style={{ background: loader ? "#ccc" : "#49BA6F"}}> Submit Application 
+                 </SubmitButton>
 
-            <SubmitButton 
-                type="submit" 
-                onClick={handleSubmit}
-                style={{ background: loader ? "#ccc" : "#C13A2C"}}> Submit Application </SubmitButton>
+                </Form>
+            </FormWrapper>
         </Container>
     </>
   )

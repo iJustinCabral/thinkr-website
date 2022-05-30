@@ -1,7 +1,7 @@
 [
     {
         "id": 2,
-        "state": "inprogress",
+        "state": "done",
         "title": "Begin NFT Art Collaboration",
         "subtitle": "Collaborate with our Amazing Artists.",
         "para": "The development of the Thinkr NFT artwork will honor some of the great thinkers who have come before us. At the forefront of this project will be absolute transparency. We want our community members to feel involved and understand what’s going on at all times during the project’s most important stages. ",
@@ -10,7 +10,7 @@
     },
     {
         "id": 3,
-        "state": "incomplete",
+        "state": "done",
         "title": "Begin Smart Contract Development",
         "subtitle": "Coding coding coding...keep them fingers coding",
         "para": "The accuracy of the code written for our smart contracts is of the utmost importance. All code written for our smart contracts is final once published to the Ethereum Mainnet. We take the accuracy of the code very seriously because any errors found in the code could allow exploits to go undetected for years to come. This is why we need to be incredibly deliberate and precise when crafting our smart contracts so we can be confident in our project’s core foundation for the foreseeable future. ",
@@ -18,7 +18,7 @@
     },
     {
         "id": 4,
-        "state": "incomplete",
+        "state": "inprogress",
         "title": "THINK List",
         "subtitle": "Giving back to our earliest supporters",
         "para": "Thinkr would be nothing without our community. A select few who chose to believe in our project from the beginning will be given the chance to mint our first NFT series from our THINK List.",
