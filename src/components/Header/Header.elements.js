@@ -12,6 +12,8 @@
             return "#F49B1D";
           case "red":
             return "#C13A2C";
+          case "grey":
+            return "#BDC2C8";
           default:
             return "#fff";
       }
