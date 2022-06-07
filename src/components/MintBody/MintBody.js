@@ -66,18 +66,57 @@ const MintBody = () => {
     } 
     
     // Testing contract functions
-    const testLog = async ()  => {
-        price = await connectedContract.price()
-        setPrice(price)
+    const testPrice = async () => {
+      try {
+        if (ethereum){
+          let priceTxn = await connectedContract.price();
+          console.log("Expecting price");
+          
+          //await priceTxn.wait();
+          console.log(priceTxn.toString())
+          console.log("Good stuff should be above me")
+        } else {
+          console.log("Ethereum object doesnt exist!")
+        }
+      } catch(error) {
+        console.log(error)
+      }
     }
+    testPrice();
 
-    testLog();
-    console.log(price)
-  
+    const askContractToPublicMint = async () => {
+      try {
+        const WEI_TO_ETH = 1000000000000000000;
+        const mintPrice = "55500000000000000";
+
+        if (ethereum){
+          console.log("Going to pop wallet now to pay gas...")
+          const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+
+          let nftTxn = await connectedContract.mint(1, {value: mintPrice});
+          console.log(" Expecting 0.555");
+
+          console.log("Mining... please wait.");
+          await nftTxn.wait();
+          console.log(nftTxn);
+          console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+        } else{
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    }
     // Render Methods
     const renderNotConnectedContainer = () => (
       <MintButton onClick={connectWallet}>
         Connect to Wallet
+      </MintButton>
+    );
+
+    const renderMintUI = () => (
+      <MintButton onClick={askContractToPublicMint} >
+        Mint NFT
       </MintButton>
     );
   
@@ -90,12 +129,7 @@ const MintBody = () => {
         <Container>
             
 
-          {currentAccount === "" ? (renderNotConnectedContainer()) : 
-          (
-            <MintButton>
-                Mint NFT
-            </MintButton>
-          )}
+          {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
 
             
         </Container>
