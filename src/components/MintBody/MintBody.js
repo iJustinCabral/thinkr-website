@@ -3,12 +3,17 @@ import { Container, MintButton } from './MintBody.elements'
 import { ethers } from 'ethers'
 import ThinkrContract from '../../Thinkr.json'
 
+
+
 // Wait for jon's file to import
 
 const MintBody = () => {
 
     const [currentAccount, setCurrentAccount] = useState("");
     const [price, setPrice] = React.useState();
+
+    //web3React Hook stuff
+    
 
 
     /* Deployed contract addresses, change each time re-deployed
@@ -21,6 +26,8 @@ const MintBody = () => {
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
     const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);  
+
+    
   
    /* dApp Functions
    *
@@ -75,6 +82,12 @@ const MintBody = () => {
           //await priceTxn.wait();
           console.log(priceTxn.toString())
           console.log("Good stuff should be above me")
+
+          let numOfSlots = await connectedContract.getMintSlots(currentAccount);
+          console.log(currentAccount);
+          //console.log(ethers.utils.getAddress(currentAccount));
+          //console.log(ethers.utils.getIcapAddress(currentAccount));
+          //console.log(numOfSlots);
         } else {
           console.log("Ethereum object doesnt exist!")
         }
@@ -90,10 +103,17 @@ const MintBody = () => {
         const mintPrice = "55500000000000000";
 
         if (ethereum){
+          let priceTxn = await connectedContract.price();
+          let numOfSlots = await connectedContract.getMintSlots({from: currentAccount});
+          console.log(numOfSlots);
+          //Get mint slots function
+          //getMintSlots(address)
+          priceTxn = priceTxn * 3;
+
           console.log("Going to pop wallet now to pay gas...")
           const accounts = await ethereum.request({ method: "eth_requestAccounts" });
 
-          let nftTxn = await connectedContract.mint(1, {value: mintPrice});
+          let nftTxn = await connectedContract.mint(3, {value: priceTxn.toString()});
           console.log(" Expecting 0.555");
 
           console.log("Mining... please wait.");
