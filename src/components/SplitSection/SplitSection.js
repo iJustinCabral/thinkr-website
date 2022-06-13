@@ -61,7 +61,7 @@ const SplitSection = () => {
                         A Scholarship Full of Love
                     </SectionTitle> 
                     <SectionBody>
-                    The Lovelace Scholarship Program was designed by the Thinkr team and will be the first proposal The Thinkr Founders in tandem with the community will decide on the first 3 recipients. It will do the following:
+                    The Lovelace Scholarship Program was designed by the Thinkr team and will be the first utitily provided by the NFT. The Thinkr Founders in tandem with the community will decide on the first 3 recipients. It will do the following:
                     </SectionBody>
                     <SectionBody>
                        - Pay for a student(s) college degree on a per semester basis
@@ -70,10 +70,10 @@ const SplitSection = () => {
                         - Pay the student(s) a bi-weekly stipend of roughly $1,500 or $40,000 a year
                     </SectionBody>
                     <SectionBody>
-                    The goal we have in mind is to provide a student tuition and living stipend for the Fall 2022 Semester. Further details regarding the application process, selection process, academic requirements that need to be maintained, and more will be announced at a later date on the official DAO website www.adreamaway.org. 
+                    The goal we have in mind is to provide a student tuition and living stipend for the Fall 2022 Semester. Further details regarding the application process, selection process, academic requirements that need to be maintained, and more will be announced at a later date. 
                     </SectionBody>
                     <SectionBody>
-                    The Scholarship is funded by all future Thinkr NFT collections. We believe this will allow us to not only fund this scholarship but help us build more Web3 products in the future to help change students' lives. Knowing how important a scholarship opportunity like this was to the founders of Thinkr, we couldn’t be more excited to bring this opportunity to more people. 
+                    The Scholarship is funded by all future Thinkr NFT collections and future software products we develop. We believe this will allow us to not only fund this scholarship but help us build more Web3 products in the future to help change students' lives. Knowing how important a scholarship opportunity like this was to the founders of Thinkr, we couldn’t be more excited to bring this opportunity to more people. 
                     </SectionBody>
                 </ContentWrapper>
 
