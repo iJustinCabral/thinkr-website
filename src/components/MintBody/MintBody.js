@@ -18,7 +18,7 @@ const MintBody = () => {
 
     /* Deployed contract addresses, change each time re-deployed
     */
-    const THINKR_CONTRACT_ADDRESS = "0x44EF6F738aF95D7B563a4f61F927C06571025574";
+    const THINKR_CONTRACT_ADDRESS = "0x149Dbd97FcdD1eFddeA5a30866A1566d8810Cb35";
   
     /* So we can interact with our contracts
     */
@@ -84,10 +84,8 @@ const MintBody = () => {
           console.log("Good stuff should be above me")
 
           let numOfSlots = await connectedContract.getMintSlots(currentAccount);
-          console.log(currentAccount);
-          //console.log(ethers.utils.getAddress(currentAccount));
-          //console.log(ethers.utils.getIcapAddress(currentAccount));
-          //console.log(numOfSlots);
+          console.log("Slots", numOfSlots)
+     
         } else {
           console.log("Ethereum object doesnt exist!")
         }
