@@ -13,6 +13,7 @@ const MintBody = () => {
     const [prePrice, setPreSalePrice] = React.useState();
     const [remainingSupply, setRemainingSupply] = React.useState();
     const [totalMinted, setTotalMinted] = React.useState();
+    const [mintSlots, setMintSlots] = React.useState();
 
     //web3React Hook stuff
 
@@ -75,6 +76,12 @@ const MintBody = () => {
     }
 
     //console.log("TOTAL", connectedContract.totalSupply())
+    const getMintSlots = async () => {
+      let mintSlots = await connectedContract.getMintSlots(currentAccount);
+      mintSlots = ethers.BigNumber.from(mintSlots).toNumber();
+
+      setMintSlots(mintSlots);
+    };
 
     const getRemainingSupply = async () => {
       let totalSupply = await connectedContract.totalSupply();
@@ -114,7 +121,7 @@ const MintBody = () => {
 
         //await connectedContract.togglePublicSaleStarted();
         //await connectedContract.togglePresaleStarted();
-//  await connectedContract.seedAllowlist(["0xB185d86D2117C87b58d6f2e92913B9de01C925c7" , "0xef512f15EC61B66279531D0d77d19BD6733eD7cE"]);
+        await connectedContract.seedAllowlist(["0xe4b5B6b30672925ea418369F12a13B7E5A48Bbfa"]);
 
           let priceTxn = await connectedContract.price();
           console.log("Expecting price");
@@ -133,15 +140,18 @@ const MintBody = () => {
         console.log(error)
       }
     }
+
     getPubSalePrice();
     getPreSalePrice();
     getRemainingSupply();
     getTotalMinted();
+    getMintSlots();
     console.log(pubPrice);
     console.log(prePrice);
     console.log(remainingSupply);
     console.log(totalMinted);
     console.log(currentAccount);
+    console.log(mintSlots);
 
     const askContractToPublicMint = async () => {
       try {
