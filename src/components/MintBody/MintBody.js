@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import { Container, MintButton } from './MintBody.elements'
 import { ethers } from 'ethers'
-
+import ProgressBar from '../ProgressBar/progress-bar.component.js'
+import PageBodyHeader from '../PageBodyHeader/PageBodyHeader.js'
 import ThinkrContract from '../../Thinkr.json'
 
 const MintBody = () => {
+    const testColor = "#49BA6F";
 
     /* Global variables fetched from blockchain */
     const [currentAccount, setCurrentAccount] = useState("");
@@ -13,7 +15,8 @@ const MintBody = () => {
     const [remainingSupply, setRemainingSupply] = React.useState();
     const [totalMinted, setTotalMinted] = React.useState();
     const [mintSlots, setMintSlots] = React.useState();
-
+    const [isPreSale, setIsPreSale] = React.useState();
+    const [pubMintSlots, setPubMintSlots] = React.useState();
 
     /* Deployed contract addresses, change each time re-deployed */
     const THINKR_CONTRACT_ADDRESS = "0x149Dbd97FcdD1eFddeA5a30866A1566d8810Cb35";
@@ -70,6 +73,18 @@ const MintBody = () => {
 
     /* Getter functions to return data from blockchain as a global variable. */
 
+    const getPreSaleBoolean = async () => {
+      let isPreSale = await connectedContract.presaleStarted();
+      setIsPreSale(isPreSale);
+    };
+
+     const getPublicMintSlots = async () => {
+      let publicMintSlots = await connectedContract.numberMinted(currentAccount);
+      publicMintSlots = ethers.BigNumber.from(publicMintSlots).toNumber();
+
+      setPubMintSlots(publicMintSlots);
+    };
+
     const getMintSlots = async () => {
       let mintSlots = await connectedContract.getMintSlots(currentAccount);
       mintSlots = ethers.BigNumber.from(mintSlots).toNumber();
@@ -114,7 +129,7 @@ const MintBody = () => {
         if (ethereum){
 
         //await connectedContract.togglePublicSaleStarted();
-        //await connectedContract.togglePresaleStarted();
+        await connectedContract.togglePresaleStarted();
         //await connectedContract.seedAllowlist(["0xe4b5B6b30672925ea418369F12a13B7E5A48Bbfa"]);
 
         } else {
@@ -134,6 +149,10 @@ const MintBody = () => {
     getRemainingSupply();
     getTotalMinted();
     getMintSlots();
+    getPreSaleBoolean();
+    getPublicMintSlots();
+
+    console.log(pubMintSlots);
 
     /*
     console.log(pubPrice);
@@ -143,6 +162,7 @@ const MintBody = () => {
     console.log(currentAccount);
     console.log(mintSlots);
     */
+
 
     /* Minting function */
     const askContractToPublicMint = async () => {
@@ -169,7 +189,7 @@ const MintBody = () => {
              let nftTxn = await connectedContract.mint(1, {value: priceTxn.toString()});
              await nftTxn.wait();
           }
-          
+
         } else{
           console.log("Ethereum object doesn't exist!");
         }
@@ -198,12 +218,20 @@ const MintBody = () => {
       checkIfWalletIsConnected();
     }, [])
 
+//
   return (
     <>
         <Container>
-          {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
-
+          <PageBodyHeader txt={"Be A Thinkr"}/>
+          <h2> Wallet: {currentAccount} </h2>
+          <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
+          <h2> {totalMinted} / 10,000 </h2>
         </Container>
+        <Container>
+          {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
+          <h4> {isPreSale ? `THINK List | Price: ${pubPrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${prePrice} | Mint Slots: ${5 - pubMintSlots}`} </h4>
+        </Container>
+
     </>
   )
 }
