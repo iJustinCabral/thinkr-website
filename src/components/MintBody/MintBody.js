@@ -4,10 +4,9 @@ import { ethers } from 'ethers'
 
 import ThinkrContract from '../../Thinkr.json'
 
-// Wait for jon's file to import
-
 const MintBody = () => {
 
+    /* Global variables fetched from blockchain */
     const [currentAccount, setCurrentAccount] = useState("");
     const [pubPrice, setPubPrice] = React.useState();
     const [prePrice, setPreSalePrice] = React.useState();
@@ -15,28 +14,19 @@ const MintBody = () => {
     const [totalMinted, setTotalMinted] = React.useState();
     const [mintSlots, setMintSlots] = React.useState();
 
-    //web3React Hook stuff
 
-
-
-    /* Deployed contract addresses, change each time re-deployed
-    */
+    /* Deployed contract addresses, change each time re-deployed */
     const THINKR_CONTRACT_ADDRESS = "0x149Dbd97FcdD1eFddeA5a30866A1566d8810Cb35";
 
-    /* So we can interact with our contracts
-    */
+    /* Importing deployed contract via ethers.js */
     const { ethereum } = window;
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
     const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
 
+   /* dApp Functions */
 
-
-   /* dApp Functions
-   *
-   *
-   * */
-
+   /* Checking if wallet is connected */
     const checkIfWalletIsConnected = async () => {
 
       if (!ethereum) {
@@ -57,6 +47,9 @@ const MintBody = () => {
       }
     }
 
+    /* Connect user's wallet.
+    *  We know this works for MetaMask, not sure about other wallet providers.
+    */
     const connectWallet = async () => {
       try {
 
@@ -75,7 +68,8 @@ const MintBody = () => {
       }
     }
 
-    //console.log("TOTAL", connectedContract.totalSupply())
+    /* Getter functions to return data from blockchain as a global variable. */
+
     const getMintSlots = async () => {
       let mintSlots = await connectedContract.getMintSlots(currentAccount);
       mintSlots = ethers.BigNumber.from(mintSlots).toNumber();
@@ -114,24 +108,14 @@ const MintBody = () => {
     };
 
 
-    // Testing contract functions
+    /* Function solely for testing contract functionality */
     const testPrice = async () => {
       try {
         if (ethereum){
 
         //await connectedContract.togglePublicSaleStarted();
         //await connectedContract.togglePresaleStarted();
-        await connectedContract.seedAllowlist(["0xe4b5B6b30672925ea418369F12a13B7E5A48Bbfa"]);
-
-          let priceTxn = await connectedContract.price();
-          console.log("Expecting price");
-
-          //await priceTxn.wait();
-          console.log(priceTxn.toString())
-          console.log("Good stuff should be above me")
-
-          //let numOfSlots = await connectedContract.getMintSlots(currentAccount);
-          //console.log("Slots", numOfSlots)
+        //await connectedContract.seedAllowlist(["0xe4b5B6b30672925ea418369F12a13B7E5A48Bbfa"]);
 
         } else {
           console.log("Ethereum object doesnt exist!")
@@ -141,56 +125,51 @@ const MintBody = () => {
       }
     }
 
+    /* Call dApp functions */
+
+    //testPrice();
+
     getPubSalePrice();
     getPreSalePrice();
     getRemainingSupply();
     getTotalMinted();
     getMintSlots();
+
+    /*
     console.log(pubPrice);
     console.log(prePrice);
     console.log(remainingSupply);
     console.log(totalMinted);
     console.log(currentAccount);
     console.log(mintSlots);
+    */
 
+    /* Minting function */
     const askContractToPublicMint = async () => {
       try {
-        const WEI_TO_ETH = 1000000000000000000;
-        const mintPrice = "55500000000000000";
 
         if (ethereum){
           let priceTxn = await connectedContract.price();
-        //  let numOfSlots = await connectedContract.getMintSlots({from: currentAccount});
-        //  console.log(numOfSlots);
-          //Get mint slots function
-          //getMintSlots(address)
-        //  priceTxn = priceTxn * 3;
 
-          console.log("Going to pop wallet now to pay gas...")
+          /* Wait for wallet prompt */
           const accounts = await ethereum.request({ method: "eth_requestAccounts" });
 
+          /* Check the boolean values for sale event */
           let checkPubSale = await connectedContract.publicSaleStarted();
-          console.log(checkPubSale);
-
           let checkPreSale = await  connectedContract.presaleStarted();
-          console.log(checkPreSale);
 
+          /* Presale mint */
           if(checkPreSale){
              let nftTxn = await connectedContract.allowlistMint(1, {value: priceTxn.toString()});
              await nftTxn.wait();
           }
 
+          /* Public sale mint */
           if(checkPubSale){
              let nftTxn = await connectedContract.mint(1, {value: priceTxn.toString()});
              await nftTxn.wait();
           }
-
-          //console.log(" Expecting 0.555");
-
-          //console.log("Mining... please wait.");
-          //await nftTxn.wait();
-        //  console.log(nftTxn);
-        //  console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+          
         } else{
           console.log("Ethereum object doesn't exist!");
         }
