@@ -17,9 +17,10 @@ const MintBody = () => {
     const [mintSlots, setMintSlots] = React.useState();
     const [isPreSale, setIsPreSale] = React.useState();
     const [pubMintSlots, setPubMintSlots] = React.useState();
+    const [isSaleStarted, setIsSaleStarted] = React.useState();
 
     /* Deployed contract addresses, change each time re-deployed */
-    const THINKR_CONTRACT_ADDRESS = "0x709bF599E45F2648e6b693172c2642f3B0F9b1aA";
+    const THINKR_CONTRACT_ADDRESS = "0x40FF09C99278E4B29369DE7064BF0d2559684619";
 
     /* Importing deployed contract via ethers.js */
     const { ethereum } = window;
@@ -77,8 +78,13 @@ const MintBody = () => {
       setIsPreSale(isPreSale);
     };
 
+    const getisSaleStartedBoolean = async () => {
+      let isSaleStarted = await connectedContract.saleStarted();
+      setIsSaleStarted(isSaleStarted);
+    };
+
      const getPublicMintSlots = async () => {
-      let publicMintSlots = await connectedContract.numberMinted(currentAccount);
+      let publicMintSlots = await connectedContract._walletMints(currentAccount);
       publicMintSlots = ethers.BigNumber.from(publicMintSlots).toNumber();
 
       setPubMintSlots(publicMintSlots);
@@ -150,6 +156,9 @@ const MintBody = () => {
     getMintSlots();
     getPreSaleBoolean();
     getPublicMintSlots();
+    getisSaleStartedBoolean();
+
+
 
     /*
     console.log(pubPrice);
@@ -196,17 +205,33 @@ const MintBody = () => {
     }
     // Render Methods
     const renderNotConnectedContainer = () => (
-      <MintButton onClick={connectWallet}>
-        Connect to Wallet
-      </MintButton>
+      <Container>
+        <h3>Lorem ipsum dolor sit amet, per appetere percipit disputationi et
+        , homero nostrud vituperatoribus in duo, id pro tota nobis. Convenire
+        iudicabit abhorreant mel cu. Vidisse signiferumque mei ex. Eu vim
+        civibus praesent prodesset, veri adhuc pro ne. Qui no magna regione.
+        Quo velit dignissim disputando eu, ea vim fabulas platonem volutpat,
+        quo pertinacia expetendis an. Pro nobis persecuti conceptam te, tale
+        quodsi ut has.
+        </h3>
+        <MintButton onClick={connectWallet}>
+          Connect to Wallet
+        </MintButton>
+        <h4> {isSaleStarted? `Sale is Live` : `Sale is not Live`} </h4>
+      </Container>
     );
 
     const renderMintUI = () => (
 
-
-      <MintButton onClick={askContractToPublicMint} >
-        Mint NFT
-      </MintButton>
+      <Container>
+        <h2> Wallet: {currentAccount} </h2>
+        <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
+        <h2> {totalMinted} / 10,000 </h2>
+        <MintButton onClick={askContractToPublicMint} >
+          Mint NFT
+        </MintButton>
+        <h4> {isPreSale ? `THINK List | Price: ${pubPrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${prePrice} | Mint Slots Remaining : ${ 5 - pubMintSlots}`} </h4>
+      </Container>
 
 
     );
@@ -220,14 +245,9 @@ const MintBody = () => {
     <>
         <Container>
           <PageBodyHeader txt={"Be A Thinkr"}/>
-          <h2> Wallet: {currentAccount} </h2>
-          <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
-          <h2> {totalMinted} / 10,000 </h2>
         </Container>
-        <Container>
           {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
-          <h4> {isPreSale ? `THINK List | Price: ${pubPrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${prePrice} | Mint Slots: ${5 - pubMintSlots}`} </h4>
-        </Container>
+
 
     </>
   )
