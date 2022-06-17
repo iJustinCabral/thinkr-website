@@ -19,7 +19,7 @@ const MintBody = () => {
     const [pubMintSlots, setPubMintSlots] = React.useState();
 
     /* Deployed contract addresses, change each time re-deployed */
-    const THINKR_CONTRACT_ADDRESS = "0x149Dbd97FcdD1eFddeA5a30866A1566d8810Cb35";
+    const THINKR_CONTRACT_ADDRESS = "0x709bF599E45F2648e6b693172c2642f3B0F9b1aA";
 
     /* Importing deployed contract via ethers.js */
     const { ethereum } = window;
@@ -43,7 +43,6 @@ const MintBody = () => {
 
       if (accounts.length !== 0) {
         const account = accounts[0];
-        console.log("Found an authorized account:", account);
         setCurrentAccount(account);
       } else {
         console.log("No authorized account found");
@@ -152,8 +151,6 @@ const MintBody = () => {
     getPreSaleBoolean();
     getPublicMintSlots();
 
-    console.log(pubMintSlots);
-
     /*
     console.log(pubPrice);
     console.log(prePrice);
@@ -175,7 +172,7 @@ const MintBody = () => {
           const accounts = await ethereum.request({ method: "eth_requestAccounts" });
 
           /* Check the boolean values for sale event */
-          let checkPubSale = await connectedContract.publicSaleStarted();
+          let checkPubSale = await connectedContract.saleStarted();
           let checkPreSale = await  connectedContract.presaleStarted();
 
           /* Presale mint */
