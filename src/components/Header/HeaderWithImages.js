@@ -2,16 +2,8 @@ import React from 'react'
 import ImageCarousel from '../ImageCarousel/ImageCarousel'
 import { HeaderSection, HeaderTextWrapper, HeaderTitle} from './Header.elements'
 
-const images = [
-    "../../images/ada.png",
-    "../../images/ada.png",
-    "../../images/ada.png",
-    "../../images/ada.png",
-    "../../images/ada.png",
-]
 
-
-const HeaderWithImages = ({headerColor, headerTitleText, headerBodyText}) => {
+const HeaderWithImages = ({headerColor, headerTitleText}) => {
 
   return (
     <HeaderSection headerColor={headerColor}>

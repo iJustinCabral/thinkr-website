@@ -7,3 +7,8 @@ export const headerObject = {
 export const dividerObject = {
     dividerColor: 'red'
 }
+
+export const pageBodyHeaderObject = {
+    txt: "Be A Thinkr",
+    textColor: 'red'
+}

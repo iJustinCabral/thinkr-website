@@ -1,14 +1,16 @@
 import React from 'react'
-import Header  from '../../components/Header/Header'
+import HeaderWithImages from '../../components/Header/HeaderWithImages'
 import PageDivider from '../../components/PageDivider/PageDivider';
 import  MintBody  from '../../components/MintBody/MintBody';
-import { headerObject, dividerObject } from './Data';
+import { headerObject, dividerObject, pageBodyHeaderObject } from './Data';
+import PageBodyHeader from '../../components/PageBodyHeader/PageBodyHeader';
 
 const Mint = () => {
   return (
     <>
-    <Header {...headerObject}/>
+    <HeaderWithImages {...headerObject}/>
     <PageDivider {...dividerObject}/>
+    <PageBodyHeader {...pageBodyHeaderObject} />
     <MintBody/>
     </>
   )

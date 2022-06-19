@@ -243,12 +243,7 @@ const MintBody = () => {
 //
   return (
     <>
-        <Container>
-          <PageBodyHeader txt={"Be A Thinkr"}/>
-        </Container>
           {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
-
-
     </>
   )
 }

@@ -10,7 +10,7 @@ const ScholarshipPageBody = () => {
   return (
     <>
         <Container>
-            <PageBodyHeader txt={"A Scholarship Full of Love"} />
+            <PageBodyHeader txt={"A Scholarship Full of Love"} textColor={'red'} />
 
             <ColumnWrapper>
                 <ColumnItem img={GradHat} txt={"The Lovelace Scholarship Program is intended for those who are attending their first year in college, or those who are already enrolled. Regardless of your circumstances, the program will ensure that you graduate college debt free. For those who are incoming freshman, the scholarship will pay off your college tuition on a semester-by-semester basis if you meet our academic standards. For those who are currently enrolled, the scholarship will also pay off any debt you have accrued before joining the program."}/>
