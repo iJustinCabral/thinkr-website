@@ -17,7 +17,7 @@ export const MintButton = styled.button`
     outline: none;
     border: none;
     cursor: pointer;
-    width: 50%;
+    width: 260px;
     transition: all 0.3s ease-in-out;
     background: #000;
 
@@ -25,4 +25,40 @@ export const MintButton = styled.button`
         transform: scale(0.9);
     }
 
+`
+
+export const ParagraphText = styled.h3`
+  max-width: 740px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  padding: 20px;
+
+`
+
+export const WalletText = styled.h2`
+  max-width: 740px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  padding: 20px;
+`
+
+export const ProgressText = styled.h2`
+  max-width: 740px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  padding: 20px;
+`
+export const ProgressBarWrapper = styled.div`
+`
+export const FooterText = styled.h4`
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
 `

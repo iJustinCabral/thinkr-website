@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Container, MintButton } from './MintBody.elements'
+import { Container, MintButton, ParagraphText, FooterText, WalletText, ProgressText, ProgressBarWrapper } from './MintBody.elements'
 import { ethers } from 'ethers'
 import ProgressBar from '../ProgressBar/progress-bar.component.js'
 import PageBodyHeader from '../PageBodyHeader/PageBodyHeader.js'
@@ -206,31 +206,31 @@ const MintBody = () => {
     // Render Methods
     const renderNotConnectedContainer = () => (
       <Container>
-        <h3>Lorem ipsum dolor sit amet, per appetere percipit disputationi et
+        <ParagraphText>Lorem ipsum dolor sit amet, per appetere percipit disputationi et
         , homero nostrud vituperatoribus in duo, id pro tota nobis. Convenire
         iudicabit abhorreant mel cu. Vidisse signiferumque mei ex. Eu vim
         civibus praesent prodesset, veri adhuc pro ne. Qui no magna regione.
         Quo velit dignissim disputando eu, ea vim fabulas platonem volutpat,
         quo pertinacia expetendis an. Pro nobis persecuti conceptam te, tale
         quodsi ut has.
-        </h3>
+        </ParagraphText>
         <MintButton onClick={connectWallet}>
           Connect to Wallet
         </MintButton>
-        <h4> {isSaleStarted? `Sale is Live` : `Sale is not Live`} </h4>
+        <FooterText> {isSaleStarted? `Sale is Live` : `Sale is not Live`} </FooterText>
       </Container>
     );
 
     const renderMintUI = () => (
 
       <Container>
-        <h2> Wallet: {currentAccount} </h2>
-        <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
-        <h2> {totalMinted} / 10,000 </h2>
+        <WalletText> <b>Wallet:</b> {currentAccount} </WalletText>
+          <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
+        <ProgressText> <b>{totalMinted}</b> / 10,000 </ProgressText>
         <MintButton onClick={askContractToPublicMint} >
           Mint NFT
         </MintButton>
-        <h4> {isPreSale ? `THINK List | Price: ${pubPrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${prePrice} | Mint Slots Remaining : ${ 5 - pubMintSlots}`} </h4>
+        <FooterText> {isPreSale ? `THINK List | Price: ${pubPrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${prePrice} | Mint Slots Remaining : ${ 5 - pubMintSlots}`} </FooterText>
       </Container>
 
 
