@@ -150,6 +150,7 @@ const ScholarshipForm = () => {
                 </Form>
             </FormWrapper>
         </Container>
+        
     </>
   )
 }
