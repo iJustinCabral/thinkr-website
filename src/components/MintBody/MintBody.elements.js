@@ -30,7 +30,8 @@ export const MintButton = styled.button`
 export const ParagraphText = styled.h3`
   max-width: 740px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: lighter;
   line-height: 24px;
   color: #000;
   padding: 20px;

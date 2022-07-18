@@ -3,12 +3,15 @@ import { useState, useEffect, useRef, Fragment } from 'react'
 import { Img, DotsContainer, Dot, Carousel, CarouselContainer } from './ImageCarousel.elements';
 import NFT1 from "../../images/nft1.png"
 import NFT2 from "../../images/nft2.png"
-
-const delay = 3000
+import NFT3 from "../../images/nft3.jpg"
+import NFT4 from "../../images/nft4.jpg"
+import NFT5 from "../../images/nft5.png"
+import NFT6 from "../../images/nft6.png"
+const delay = 100
 
 
 const images = [
-  NFT1, NFT2, NFT1, NFT2, NFT1, NFT2, NFT1, NFT2, NFT1, NFT2
+  NFT3, NFT4, NFT4, NFT6
 ]
 
 
@@ -47,20 +50,22 @@ const ImageCarousel = () => {
             ))}
         </CarouselContainer>
 
-        <DotsContainer>
-            {images.map((_, i) => (
-                <Dot key={i} 
-                    onClick={() => {
-                      setIndex(i)
-                    }} 
-                    style ={{
-                      background: index === i ? "#965BA0" : "#fff"
-                    }}/>
-            ))}
-        </DotsContainer>
-
     </Carousel>
   )
 }
 
 export default ImageCarousel
+
+/*
+<DotsContainer>
+    {images.map((_, i) => (
+        <Dot key={i}
+            onClick={() => {
+              setIndex(i)
+            }}
+            style ={{
+              background: index === i ? "#965BA0" : "#fff"
+            }}/>
+    ))}
+</DotsContainer>
+*/

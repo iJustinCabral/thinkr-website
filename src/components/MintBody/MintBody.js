@@ -206,13 +206,10 @@ const MintBody = () => {
     // Render Methods
     const renderNotConnectedContainer = () => (
       <Container>
-        <ParagraphText>Lorem ipsum dolor sit amet, per appetere percipit disputationi et
-        , homero nostrud vituperatoribus in duo, id pro tota nobis. Convenire
-        iudicabit abhorreant mel cu. Vidisse signiferumque mei ex. Eu vim
-        civibus praesent prodesset, veri adhuc pro ne. Qui no magna regione.
-        Quo velit dignissim disputando eu, ea vim fabulas platonem volutpat,
-        quo pertinacia expetendis an. Pro nobis persecuti conceptam te, tale
-        quodsi ut has.
+        <ParagraphText>Being a Thinkr means supprting quality, affordable, and accessible education for all. Every person who
+        mints one of the NFTs from this collection will help change the lives of students for the better. This collection signifies the first step
+        in a long journey ahead to revolutionize the higher education space. With this initial launch you will be part of something bigger than yourself
+        and will give students an opportunity to break the financial chains most universities place on them. Stay hungry, stay foolish.
         </ParagraphText>
         <MintButton onClick={connectWallet}>
           Connect to Wallet
@@ -224,7 +221,7 @@ const MintBody = () => {
     const renderMintUI = () => (
 
       <Container>
-        <WalletText> <b>Wallet:</b> {currentAccount} </WalletText>
+        <WalletText> <b>Connected Wallet:</b> {currentAccount} </WalletText>
           <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
         <ProgressText> <b>{totalMinted}</b> / 10,000 </ProgressText>
         <MintButton onClick={askContractToPublicMint} >

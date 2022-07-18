@@ -8,7 +8,7 @@ export const Carousel = styled.div`
 
 export const CarouselContainer = styled.div`
     white-space: nowrap;
-    
+
 `
 
 export const Img = styled.div`

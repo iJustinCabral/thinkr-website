@@ -1,13 +1,30 @@
+export const homeNFTSection = {
+  lightBg: false,
+  imgStart: 'start',
+  lightTopLine: true,
+  lightTextDesc: true,
+  buttonLabel: 'Mint Page',
+  description: 'This collection signifies the first step in a long journey ahead to revolutionize the higher education space. With this initial launch you will be part of something bigger than yourself and will give students an opportunity to break the financial chains most universities place on them. Stay hungry, stay foolish.',
+  headline: 'Thinkr NFT Collection',
+  lightText: true,
+  topLine: 'Meet The Thinkrs',
+  primary: true,
+  img: require('../../images/nft4.png'),
+  alg: 'Image',
+  start: 'true',
+  url: '/mint'
+};
+
 export const homeObjOne = {
     lightBg: true,
     imgStart: 'start',
     lightTopLine: false,
-    lightTextDesc: false, 
+    lightTextDesc: false,
     buttonLabel: 'See Our Plans',
     description: 'Our team believes in quality, affordable, and accessible education for all. Thinkr’s core mission is the improvement of the educational system using Web3 technology. We’ll start by using NFT’s to fund a scholarship and stipend program for college students. The road ahead is long, so join us in our journey to empower students and change education for the better. ',
-    headline: 'Be A Thinkr', 
-    lightText: false, 
-    topLine: 'Knowledge is Power', 
+    headline: 'Be A Thinkr',
+    lightText: false,
+    topLine: 'Knowledge is Power',
     primary: false,
     img: require('../../images/education.png'),
     alg: 'Image',
@@ -32,7 +49,7 @@ export const homeObjTwo = {
     start: '',
     url: '/dao'
   };
-  
+
   export const homeObjThree = {
     primary: false,
     lightBg: true,
@@ -51,7 +68,7 @@ export const homeObjTwo = {
     start: 'true',
     url: '/roadmap'
   };
-  
+
   export const homeObjFour = {
     primary: true,
     lightBg: false,
