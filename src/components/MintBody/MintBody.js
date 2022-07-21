@@ -20,7 +20,7 @@ const MintBody = () => {
     const [isSaleStarted, setIsSaleStarted] = React.useState();
 
     /* Deployed contract addresses, change each time re-deployed */
-    const THINKR_CONTRACT_ADDRESS = "0x40FF09C99278E4B29369DE7064BF0d2559684619";
+    const THINKR_CONTRACT_ADDRESS = "0x2f3fDb5848D6E74A10A0bDbbfCa3a509E03622B6";
 
     /* Importing deployed contract via ethers.js */
     const { ethereum } = window;
@@ -186,13 +186,13 @@ const MintBody = () => {
 
           /* Presale mint */
           if(checkPreSale){
-             let nftTxn = await connectedContract.allowlistMint(1, {value: priceTxn.toString()});
+             let nftTxn = await connectedContract.allowlistMint(1, {value: prePrice.toString()});
              await nftTxn.wait();
           }
 
           /* Public sale mint */
           if(checkPubSale){
-             let nftTxn = await connectedContract.mint(1, {value: priceTxn.toString()});
+             let nftTxn = await connectedContract.mint(1, {value: pubPrice.toString()});
              await nftTxn.wait();
           }
 
