@@ -175,7 +175,8 @@ const MintBody = () => {
       try {
 
         if (ethereum){
-          let priceTxn = await connectedContract.price();
+          let pubsalePrice = await connectedContract.price();
+          let presalePrice = await connectedContract.allowlistPrice();
 
           /* Wait for wallet prompt */
           const accounts = await ethereum.request({ method: "eth_requestAccounts" });
@@ -186,13 +187,13 @@ const MintBody = () => {
 
           /* Presale mint */
           if(checkPreSale){
-             let nftTxn = await connectedContract.allowlistMint(1, {value: prePrice.toString()});
+             let nftTxn = await connectedContract.allowlistMint(1, {value: presalePrice.toString()});
              await nftTxn.wait();
           }
 
           /* Public sale mint */
           if(checkPubSale){
-             let nftTxn = await connectedContract.mint(1, {value: pubPrice.toString()});
+             let nftTxn = await connectedContract.mint(1, {value: pubsalePrice.toString()});
              await nftTxn.wait();
           }
 
@@ -227,7 +228,7 @@ const MintBody = () => {
         <MintButton onClick={askContractToPublicMint} >
           Mint NFT
         </MintButton>
-        <FooterText> {isPreSale ? `THINK List | Price: ${pubPrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${prePrice} | Mint Slots Remaining : ${ 5 - pubMintSlots}`} </FooterText>
+        <FooterText> {isPreSale ? `THINK List | Price: ${prePrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${pubPrice} | Mint Slots Remaining : ${ 10 - pubMintSlots}`} </FooterText>
       </Container>
 
 
