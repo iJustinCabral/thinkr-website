@@ -26,6 +26,20 @@ export const MintButton = styled.button`
     }
 
 `
+export const MintNumberSelector = styled.select`
+    position: relative;
+    font-family: "Helvetica", sans-serif;
+    margin-left: 10px;
+
+`
+
+export const MintNumberWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+`
 
 export const ParagraphText = styled.h3`
   max-width: 740px;
@@ -53,7 +67,6 @@ export const ProgressText = styled.h2`
   font-size: 18px;
   line-height: 24px;
   color: #000;
-  padding: 20px;
 `
 export const ProgressBarWrapper = styled.div`
 `

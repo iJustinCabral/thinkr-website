@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Container, MintButton, ParagraphText, FooterText, WalletText, ProgressText, ProgressBarWrapper } from './MintBody.elements'
+import { Container, MintButton, ParagraphText, FooterText, WalletText, ProgressText, ProgressBarWrapper, MintNumberSelector, MintNumberWrapper } from './MintBody.elements'
 import { ethers } from 'ethers'
 import ProgressBar from '../ProgressBar/progress-bar.component.js'
 import PageBodyHeader from '../PageBodyHeader/PageBodyHeader.js'
@@ -8,6 +8,13 @@ import ThinkrContract from '../../Thinkr.json'
 const MintBody = () => {
     const testColor = "#49BA6F";
 
+    /* Mint selector functions and values */
+    const [mintSelect, setMintSelect] = React.useState();
+    const handleChange = event => {
+      setMintSelect(event.target.value);
+    }
+
+    /* */
     /* Global variables fetched from blockchain */
     const [currentAccount, setCurrentAccount] = useState("");
     const [pubPrice, setPubPrice] = React.useState();
@@ -127,27 +134,7 @@ const MintBody = () => {
       setPreSalePrice(prePrice);
     };
 
-
-    /* Function solely for testing contract functionality */
-    const testPrice = async () => {
-      try {
-        if (ethereum){
-
-        //await connectedContract.togglePublicSaleStarted();
-        await connectedContract.togglePresaleStarted();
-        //await connectedContract.seedAllowlist(["0xe4b5B6b30672925ea418369F12a13B7E5A48Bbfa"]);
-
-        } else {
-          console.log("Ethereum object doesnt exist!")
-        }
-      } catch(error) {
-        console.log(error)
-      }
-    }
-
     /* Call dApp functions */
-
-    //testPrice();
 
     getPubSalePrice();
     getPreSalePrice();
@@ -157,18 +144,6 @@ const MintBody = () => {
     getPreSaleBoolean();
     getPublicMintSlots();
     getisSaleStartedBoolean();
-
-
-
-    /*
-    console.log(pubPrice);
-    console.log(prePrice);
-    console.log(remainingSupply);
-    console.log(totalMinted);
-    console.log(currentAccount);
-    console.log(mintSlots);
-    */
-
 
     /* Minting function */
     const askContractToPublicMint = async () => {
@@ -193,7 +168,8 @@ const MintBody = () => {
 
           /* Public sale mint */
           if(checkPubSale){
-             let nftTxn = await connectedContract.mint(1, {value: pubsalePrice.toString()});
+             let price = mintSelect * pubsalePrice
+             let nftTxn = await connectedContract.mint(mintSelect, {value: price.toString()});
              await nftTxn.wait();
           }
 
@@ -215,7 +191,7 @@ const MintBody = () => {
         <MintButton onClick={connectWallet}>
           Connect to Wallet
         </MintButton>
-        <FooterText> {isSaleStarted? `Sale is Live` : `Sale is not Live`} </FooterText>
+        <FooterText> THINK list sale goes live July 30! </FooterText>
       </Container>
     );
 
@@ -225,9 +201,30 @@ const MintBody = () => {
         <WalletText> <b>Connected Wallet:</b> {currentAccount} </WalletText>
           <ProgressBar bgcolor ={testColor} completed ={totalMinted / 10000 * 100}/>
         <ProgressText> <b>{totalMinted}</b> / 10,000 </ProgressText>
-        <MintButton onClick={askContractToPublicMint} >
+
+        {isSaleStarted === true &&
+          <MintNumberWrapper>
+            <h3>Select # of NFT's to mint: </h3>
+            <MintNumberSelector value={mintSelect} onChange={handleChange}>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </MintNumberSelector>
+          </MintNumberWrapper>
+        }
+
+        <MintButton onClick={() => askContractToPublicMint()} >
           Mint NFT
         </MintButton>
+
+
         <FooterText> {isPreSale ? `THINK List | Price: ${prePrice} | Mint Slots: ${mintSlots}` : `Public Sale | Price: ${pubPrice} | Mint Slots Remaining : ${ 10 - pubMintSlots}`} </FooterText>
       </Container>
 

@@ -23,11 +23,16 @@ export const HeaderSection = styled.div`
    padding: 80px;
    background: ${({headerColor}) => headerColorType(headerColor)};
    display: flex;
+   flex-direction column;
    justify-content: center;
    align-items: center;
-   
+
    @media screen and (max-width: 768px) {
      padding: 40px;
+     display: flex;
+     flex-direction column;
+     justify-content: center;
+     align-items: center;
    }
 `
 
@@ -56,10 +61,16 @@ export const HeaderTextWrapper = styled.div`
  }
 `
 
+export const HeaderImage = styled.img`
+  width: 320px;
+  height: 320px;
+  border-radius: 8px;
+`
+
 export const HeaderTriangle = styled.div`
    position: aboslute;
-   width: 0; 
-   height: 0; 
+   width: 0;
+   height: 0;
    border-left: 40px solid transparent;
    border-right: 40px solid transparent;
    border-top: 40px solid #fff;
