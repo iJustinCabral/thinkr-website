@@ -35,7 +35,6 @@ export const HeaderSection = styled.div`
      align-items: center;
    }
 `
-
 export const HeaderTitle = styled.h1`
    margin-bottom: 34px;
    font-size: 64px;
