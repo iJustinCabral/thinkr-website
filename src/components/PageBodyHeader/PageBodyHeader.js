@@ -1,10 +1,10 @@
 import React from 'react'
 import { TitleSection, TitleText } from './PageBodyHeader.elements'
 
-const PageBodyHeader = ({txt}) => {
+const PageBodyHeader = ({txt, textColor}) => {
   return <>
     <TitleSection>
-        <TitleText>
+        <TitleText textColor={textColor}>
             {txt}
         </TitleText>
     </TitleSection>

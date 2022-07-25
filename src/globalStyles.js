@@ -68,6 +68,28 @@ export const DiscordButton = styled.button`
     }
 `
 
+export const MintButton = styled.button`
+    border-radius: 4px;
+    background: ${({primary}) => (primary ? '#CBC93E' : '#CBC93E')};
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '12px 64px' : '10px 20px')};
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.3s ease-out;
+        background: #fff;
+        background: ${({primary}) => (primary ? '#CBC93E' : '#CBC93E')};
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
+`
+
 export const ComingSoonButton = styled.button`
     border-radius: 4px;
     background: ${({primary}) => (primary ? '#C13A2C' : '#C13A2C')};

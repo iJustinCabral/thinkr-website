@@ -1,9 +1,10 @@
 import React from 'react';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix } from './Data';
-import { InfoSection, Community } from '../../components';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix, homeNFTSection } from './Data';
+import { InfoSection, Community, MintSection} from '../../components';
 
 const Home = () => {
   return <>
+      <MintSection {...homeNFTSection}/>
       <InfoSection {...homeObjOne}/>
       <InfoSection {...homeObjTwo}/>
       <InfoSection {...homeObjThree}/>

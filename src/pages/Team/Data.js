@@ -5,15 +5,15 @@ const bio = bio => {
         case "Jon":
             return ('B.S. in Computer Science with an Associates Degrees in Information Technology and Computer Studies. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. CyberCorps SFS scholarship award winner. ');
         case "Brian":
-            return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. First recipient of the CyberCorps SFS scholarship award funded by NSF.');
+            return ('M.S. in Computer Science with a Cybersecurity Specialization and first recipient of the CyberCorps SFS scholarship award funded by NSF; currently a Computer Scientist and likely to pursure a PhD in Cybersecurity.');
         case "Humberto":
-            return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Also a recipient of the CyberCorps Scholarship for Service program.');     
+            return ('B.S. in Computer Science. Currently working on his Masters in C.S. from Worcester Polytechnic Institute. Also a recipient of the CyberCorps Scholarship for Service program.');
         case "Anthony":
-            return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');   
+            return ('B.S. in Computer Information Systems. Pursuing an MPA with a Cyber Security Certificate from the University of Rhode Island. Help Desk Technician for The Kraft Group.');
         case "Yimeng":
             return('Graphic Design B.F.A student attending Rhode Island School of Design (class of 2023). Currently studying abroad in Rome. Has experience working on the city’s cultural-tourist advertisement and visual identity systems. ');
         case "Nuo":
-            return('B.F.A in Graphic Design at Rhode Island School of Design. Currently pursuing M.F.A in Design at University of Southern California. 58th GDUSA, American Graphic Design Award Winner.')               
+            return('B.F.A in Graphic Design at Rhode Island School of Design. Currently pursuing M.F.A in Design at University of Southern California. 58th GDUSA, American Graphic Design Award Winner.')
         case "Brian A.":
             return('Web 3 enthusiast, seeker of knowledge with years of leadership experience at Fortune 500 companies.')
             default:

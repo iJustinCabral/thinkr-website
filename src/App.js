@@ -10,6 +10,8 @@ import Scholarship from './pages/Scholarship/Scholarship';
 import ScholarshipInfo from './pages/Scholarship/ScholarshipInfo';
 import ScrollToTop from './components/ScollToTop';
 import ScholarshipApplication from './pages/Scholarship/ScholarshipApplication';
+import Mint from './pages/Mint/Mint'
+import TestPage from './pages/TestPage/TestPage';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path='/love' element={<Scholarship />} />
           <Route path='/love-info' element={<ScholarshipInfo />} />
           <Route path='/love-application' element={<ScholarshipApplication />} />
+          <Route path='/mint' element={<Mint />} />
+          <Route path='/test' element={<TestPage />} />
         </Routes>
         <Footer />
     </Router>
