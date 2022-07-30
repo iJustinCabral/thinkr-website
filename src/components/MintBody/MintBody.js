@@ -28,16 +28,11 @@ const MintBody = () => {
     /* Deployed contract addresses, change each time re-deployed */
     const THINKR_CONTRACT_ADDRESS = "0xD493c2d5Dc1315b80EA9ee210971c15f04161027";
 
-    /* Importing deployed contract via ethers.js */
-    const { ethereum } = window;
-    const provider = new ethers.providers.Web3Provider(ethereum);
-    const signer = provider.getSigner();
-    const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
-
    /* dApp Functions */
 
    /* Checking if wallet is connected */
     const checkIfWalletIsConnected = async () => {
+      const { ethereum } = window;
 
       if (!ethereum) {
         console.log("Make sure you have metamask!");
@@ -62,8 +57,10 @@ const MintBody = () => {
     const connectWallet = async () => {
       try {
 
+        const { ethereum } = window;
+
         if (!ethereum) {
-          alert("Get MetaMask!");
+          alert("Please install a wallet to mint!");
           return;
         }
 
@@ -80,57 +77,177 @@ const MintBody = () => {
     /* Getter functions to return data from blockchain as a global variable. */
 
     const getPreSaleBoolean = async () => {
-      let isPreSale = await connectedContract.presaleStarted();
-      setIsPreSale(isPreSale);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let isPreSale = await connectedContract.presaleStarted();
+          setIsPreSale(isPreSale);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     const getisSaleStartedBoolean = async () => {
-      let isSaleStarted = await connectedContract.saleStarted();
-      setIsSaleStarted(isSaleStarted);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let isSaleStarted = await connectedContract.saleStarted();
+          setIsSaleStarted(isSaleStarted);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
      const getPublicMintSlots = async () => {
-      let publicMintSlots = await connectedContract._walletMints(currentAccount);
-      publicMintSlots = ethers.BigNumber.from(publicMintSlots).toNumber();
-
-      setPubMintSlots(publicMintSlots);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let publicMintSlots = await connectedContract._walletMints(currentAccount);
+          publicMintSlots = ethers.BigNumber.from(publicMintSlots).toNumber();
+    
+          setPubMintSlots(publicMintSlots);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     const getMintSlots = async () => {
-      let mintSlots = await connectedContract.getMintSlots(currentAccount);
-      mintSlots = ethers.BigNumber.from(mintSlots).toNumber();
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let mintSlots = await connectedContract.getMintSlots(currentAccount);
+          mintSlots = ethers.BigNumber.from(mintSlots).toNumber();
 
-      setMintSlots(mintSlots);
+          setMintSlots(mintSlots);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     const getRemainingSupply = async () => {
-      let totalSupply = await connectedContract.totalSupply();
-      totalSupply = ethers.BigNumber.from(totalSupply).toNumber();
-
-      setRemainingSupply(10000 - totalSupply);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let totalSupply = await connectedContract.totalSupply();
+          totalSupply = ethers.BigNumber.from(totalSupply).toNumber();
+    
+          setRemainingSupply(10000 - totalSupply);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     const getTotalMinted = async () => {
-      let totalSupply = await connectedContract.totalSupply();
-      totalSupply = ethers.BigNumber.from(totalSupply).toNumber();
-
-      setTotalMinted(totalSupply);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let totalSupply = await connectedContract.totalSupply();
+          totalSupply = ethers.BigNumber.from(totalSupply).toNumber();
+    
+          setTotalMinted(totalSupply);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     const getPubSalePrice = async () => {
-      let pubPrice = await connectedContract.price();
-      pubPrice = ethers.utils.formatEther(pubPrice);
-      pubPrice = pubPrice.toString();
-
-      setPubPrice(pubPrice);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let pubPrice = await connectedContract.price();
+          pubPrice = ethers.utils.formatEther(pubPrice);
+          pubPrice = pubPrice.toString();
+    
+          setPubPrice(pubPrice);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     const getPreSalePrice = async () => {
-      let prePrice = await connectedContract.allowlistPrice();
-      prePrice = ethers.utils.formatEther(prePrice);
-      prePrice = prePrice.toString();
-
-      setPreSalePrice(prePrice);
+      try {
+        const { ethereum } = window;
+    
+        if (ethereum) {
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+    
+          let prePrice = await connectedContract.allowlistPrice();
+          prePrice = ethers.utils.formatEther(prePrice);
+          prePrice = prePrice.toString();
+    
+          setPreSalePrice(prePrice);
+    
+        } else {
+          console.log("Ethereum object doesn't exist!");
+        }
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     /* Call dApp functions */
@@ -148,7 +265,14 @@ const MintBody = () => {
     const askContractToPublicMint = async () => {
       try {
 
+        const { ethereum } = window;
+
+
         if (ethereum){
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const signer = provider.getSigner();
+          const connectedContract = new ethers.Contract(THINKR_CONTRACT_ADDRESS, ThinkrContract.abi, signer);
+
           let pubsalePrice = await connectedContract.price();
           let presalePrice = await connectedContract.allowlistPrice();
 
