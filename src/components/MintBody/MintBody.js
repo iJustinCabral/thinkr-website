@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import { Container, MintButton, ParagraphText, FooterText, WalletText, ProgressText, ProgressBarWrapper, MintNumberSelector, MintNumberWrapper } from './MintBody.elements'
 import { ethers } from 'ethers'
 import ProgressBar from '../ProgressBar/progress-bar.component.js'
-import PageBodyHeader from '../PageBodyHeader/PageBodyHeader.js'
 import ThinkrContract from '../../Thinkr.json'
 
 const MintBody = () => {
@@ -27,7 +26,7 @@ const MintBody = () => {
     const [isSaleStarted, setIsSaleStarted] = React.useState();
 
     /* Deployed contract addresses, change each time re-deployed */
-    const THINKR_CONTRACT_ADDRESS = "0x2f3fDb5848D6E74A10A0bDbbfCa3a509E03622B6";
+    const THINKR_CONTRACT_ADDRESS = "0xD493c2d5Dc1315b80EA9ee210971c15f04161027";
 
     /* Importing deployed contract via ethers.js */
     const { ethereum } = window;
@@ -183,7 +182,7 @@ const MintBody = () => {
     // Render Methods
     const renderNotConnectedContainer = () => (
       <Container>
-        <ParagraphText>Being a Thinkr means supprting quality, affordable, and accessible education for all. Every person who
+        <ParagraphText>Being a Thinkr means supporting quality, affordable, and accessible education for all. Every person who
         mints one of the NFTs from this collection will help change the lives of students for the better. This collection signifies the first step
         in a long journey ahead to revolutionize the higher education space. With this initial launch you will be part of something bigger than yourself
         and will give students an opportunity to break the financial chains most universities place on them. Stay hungry, stay foolish.
@@ -191,7 +190,7 @@ const MintBody = () => {
         <MintButton onClick={connectWallet}>
           Connect to Wallet
         </MintButton>
-        <FooterText> THINK list sale goes live July 30! </FooterText>
+        <FooterText> THINK list is live! </FooterText>
       </Container>
     );
 

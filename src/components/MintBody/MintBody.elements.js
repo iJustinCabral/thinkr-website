@@ -59,6 +59,12 @@ export const WalletText = styled.h2`
   line-height: 24px;
   color: #000;
   padding: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+
 `
 
 export const ProgressText = styled.h2`
@@ -75,4 +81,9 @@ export const FooterText = styled.h4`
   justify-content: center;
   align-items: center;
   padding:20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px;
+}
 `
