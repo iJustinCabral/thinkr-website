@@ -8,8 +8,10 @@ import ThinkrContract from '../../Thinkr.json'
 const MintBody = () => {
     const testColor = "#49BA6F";
 
+    
+
     /* Mint selector functions and values */
-    const [mintSelect, setMintSelect] = React.useState();
+    const [mintSelect = 1, setMintSelect] = React.useState();
     const handleChange = event => {
       setMintSelect(event.target.value);
     }
