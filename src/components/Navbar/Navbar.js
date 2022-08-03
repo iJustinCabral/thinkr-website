@@ -49,13 +49,6 @@ const Navbar = () => {
                     </NavItem>
 
                     <NavItem>
-                        <NavLinks to='/dao'>
-                            DAO
-                        </NavLinks>
-                    </NavItem>
-               
-               
-                    <NavItem>
                         <NavLinks to='/roadmap'>
                             Roadmap
                         </NavLinks>
@@ -72,13 +65,7 @@ const Navbar = () => {
                             FAQ
                         </NavLinks>
                     </NavItem>
-
-                    <NavItem>
-                        <NavLinks to='/love'>
-                            Scholarship
-                        </NavLinks>
-                    </NavItem>
-               
+                    
                 </NavMenu>
 
             </NavbarContainer>

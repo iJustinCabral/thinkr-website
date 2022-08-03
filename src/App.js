@@ -22,13 +22,9 @@ function App() {
       <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/dao' element={<Dao />} />
           <Route path='/roadmap' element={<Roadmap />} />
           <Route path='/team' element={<Team />} />
           <Route path='/faq' element={<Faq />} />
-          <Route path='/love' element={<Scholarship />} />
-          <Route path='/love-info' element={<ScholarshipInfo />} />
-          <Route path='/love-application' element={<ScholarshipApplication />} />
           <Route path='/mint' element={<Mint />} />
           <Route path='/test' element={<TestPage />} />
         </Routes>

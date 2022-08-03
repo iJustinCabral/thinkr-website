@@ -18,7 +18,7 @@
     },
     {
         "id": 4,
-        "state": "inprogress",
+        "state": "done",
         "title": "THINK List",
         "subtitle": "Giving back to our earliest supporters",
         "para": "Thinkr would be nothing without our community. A select few who chose to believe in our project from the beginning will be given the chance to mint our first NFT series from our THINK List.",
@@ -26,7 +26,7 @@
     },
     {
         "id": 5,
-        "state": "incomplete",
+        "state": "done",
         "title": "Thinkr Collection NFT Mint Date",
         "subtitle": "Presale and Public sale",
         "para": "Announce the date and times for Thinkr NFT collection presale and public sale.",

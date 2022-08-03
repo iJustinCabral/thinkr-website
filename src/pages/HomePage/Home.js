@@ -6,8 +6,6 @@ const Home = () => {
   return <>
       <MintSection {...homeNFTSection}/>
       <InfoSection {...homeObjOne}/>
-      <InfoSection {...homeObjTwo}/>
-      <InfoSection {...homeObjThree}/>
       <InfoSection {...homeObjFour}/>
       <Community {...homeObjFive}/>
       <InfoSection {...homeObjSix}/>
